@@ -1,0 +1,132 @@
+
+* {
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #F1F1E7;
+
+}
+
+.ambience {
+
+  background-color: #0F2230;
+
+}
+
+body .img-responsive {
+
+  border: 3px solid dimgrey;
+
+}
+
+/*section: header*/
+
+header .row {
+
+  max-height: 25%;
+  margin: 0 0 0 0;
+  padding: 2% 0 0 0;
+
+}
+
+header .col-md-6 {
+
+  background-color: inherit;
+  margin: 0 0 0 0;
+
+}
+
+.name-plate {
+
+  padding: 0 0 0 0;
+
+
+}
+
+h1 {
+
+  font-size: 50px;
+  font-weight: 100;
+  background-color: inherit;
+
+}
+
+h2 {
+
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0 0 0 0;
+  background-color: inherit;
+
+}
+
+.logo {
+
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  max-height: 128px;
+
+}
+
+.logo-box {
+
+  padding: 0 0 0 0;
+
+}
+
+/*section: showcase*/
+
+.jumbotron {
+
+  background-color: inherit;
+
+}
+
+.showcase .jumbotron {
+
+  padding: 0 0 0 0;
+  border: 0 none;
+
+}
+
+.project {
+
+  margin: 0 0 1% 0;
+
+}
+
+.showcase h3 {
+
+  margin: 0 0 1% 0;
+  padding: 0 0 0 1%;
+
+}
+
+.project h4 {
+
+  font-size: 30px;
+  margin: 0 0 0 0;
+  padding: 0.5% 0 0.5% 0;
+  background-color: dimgrey;
+
+}
+
+.project a {
+
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+  color: #F1F1E7;
+
+}
+
+/*section: modal*/
+
+p {
+
+  margin: 1% 0 0 0;
+
+}

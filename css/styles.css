@@ -42,6 +42,8 @@ header .col-md-6 {
 .name-plate {
 
   padding: 0 0 0 0;
+  filter: url('#blur');
+  filter: blur(1px);
 
 
 }

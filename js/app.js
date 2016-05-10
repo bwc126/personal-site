@@ -8,27 +8,26 @@
   // };
   var projects = $(".project img");
   var numProj = projects.length;
+  var picList = [
+    "images/M/proj1-M.png 800w, images/proj1-L.png 1200w",
+    "images/Proj2-M.png 800w, images/Proj2-L.png 1200w",
+    "images/M/Hydra2-M.png 800w, images/L/Hydra2-L.png 1200w"
+  ];
 
-  for (var i = 0; i<(numProj); i++) {
 
-    $(projects[i]).mouseover(function() {
-      var picSrc = $(this).attr('src');
-      console.log(picSrc);
-      (function() {
-        console.log('anon spotlight firing');
-        $('.jumbotron img').attr('srcset',picSrc);
-      }(picSrc));
-    });
-
-  };
-
-  // $('.project').each(function() {
-  //   // Call spotlight to change which project's picture get's the big screen treatment
-  //   var self = this;
-  //   var picSrc = $(self).attr('src');
-  //   console.dir(self);
-  //   self.mouseover(picSrc,spotlight(picSrc));
-  // });
-  // Takes in a project and changes the big jumbotron picture to its picture
+  var picSrc;
+  // For loop construction doesn't play nicely with serial event listener setting
+  $(projects[0]).mouseenter(function() {
+    picSrc = picList[0];
+    $('.jumbotron img').attr('srcset',picSrc);
+  });
+  $(projects[1]).mouseenter(function() {
+    picSrc = picList[1];
+    $('.jumbotron img').attr('srcset',picSrc);
+  });
+  $(projects[2]).mouseenter(function() {
+    picSrc = picList[2];
+    $('.jumbotron img').attr('srcset',picSrc);
+  });
 
 })(jQuery);

@@ -6,20 +6,29 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  color: #F1F1E7;
+  color: #1395FF;
 
+}
+
+.modal-open .row {
+  filter: url('#blur');
+  filter: blur(3px);
 }
 
 .ambience {
 
-  background-color: #0F2230;
+  background-color: #14171A;
 
 }
 
 body .img-responsive {
 
-  border: 3px solid dimgrey;
+  border: 3px solid #FF7D13;
 
+}
+.glow {
+  filter: url('#blur');
+  filter: blur(3px);
 }
 
 /*section: header*/
@@ -42,8 +51,7 @@ header .col-md-6 {
 .name-plate {
 
   padding: 0 0 0 0;
-  filter: url('#blur');
-  filter: blur(1px);
+
 
 
 }
@@ -51,7 +59,7 @@ header .col-md-6 {
 h1 {
 
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 200;
   background-color: inherit;
 
 }
@@ -80,6 +88,25 @@ h2 {
 }
 
 /*section: showcase*/
+button {
+
+  background-color: inherit;
+  padding: 0.5% 0.24%;
+  margin: 0 1%;
+}
+button.science {
+  border: 3px solid #FF7D13;
+}
+
+button.engineering {
+  border: 3px solid #FF7D13;
+
+}
+
+button.programming {
+  border: 3px solid #FF7D13;
+
+}
 
 .jumbotron {
 
@@ -100,6 +127,14 @@ h2 {
 
 }
 
+.showcase hr {
+  border-top: 3px solid #FF1395;
+}
+.showcase hr.glow {
+  position: absolute;
+  z-index: -1;
+}
+
 .showcase h3 {
 
   margin: 0 0 1% 0;
@@ -108,11 +143,11 @@ h2 {
 }
 
 .project h4 {
-
+  color: #FF1395;
   font-size: 30px;
   margin: 0 0 0 0;
   padding: 0.5% 0 0.5% 0;
-  background-color: dimgrey;
+  background-color: #FF7D13;
 
 }
 
@@ -120,8 +155,8 @@ h2 {
 
   font-size: 20px;
   text-decoration: none;
-  font-weight: 100;
-  color: #F1F1E7;
+  font-weight: 300;
+  color: #FF1395;
 
 }
 

@@ -23,13 +23,34 @@
 
 body .img-responsive {
 
-  border: 3px solid #FF7D13;
+  border: 3px solid #1395FF;
 
 }
-.glow {
-  filter: url('#blur');
-  filter: blur(3px);
+
+.text-glow-blue {
+
+  text-shadow: 3px 3px 9px #1395FF;
+
 }
+
+.text-glow-pink {
+
+  text-shadow: 3px 3px 9px #FF1395;
+
+}
+
+.box-glow-blue {
+
+  box-shadow: 3px 3px 6px #1395FF, 0px 0px 9px #1395FF;
+
+}
+
+.box-glow-orange {
+
+  box-shadow: 3px 3px 6px #FF7D13, 0px 0px 9px #FF7D13;
+
+}
+
 
 /*section: header*/
 
@@ -89,7 +110,7 @@ h2 {
 
 /*section: showcase*/
 button {
-
+  font-size: 120%;
   background-color: inherit;
   padding: 0.5% 0.24%;
   margin: 0 1%;
@@ -127,12 +148,16 @@ button.programming {
 
 }
 
-.showcase hr {
-  border-top: 3px solid #FF1395;
+.project-link {
+
+  text-shadow: 3px 3px 9px #FF1395;
+
 }
-.showcase hr.glow {
-  position: absolute;
-  z-index: -1;
+
+.showcase hr {
+
+  border-top: 3px solid #FF7D13;
+
 }
 
 .showcase h3 {
@@ -147,7 +172,7 @@ button.programming {
   font-size: 30px;
   margin: 0 0 0 0;
   padding: 0.5% 0 0.5% 0;
-  background-color: #FF7D13;
+  border: 3px solid #FF7D13;
 
 }
 

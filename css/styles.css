@@ -41,13 +41,13 @@ body .img-responsive {
 
 .box-glow-blue {
 
-  box-shadow: 3px 3px 6px #1395FF, 0px 0px 9px #1395FF;
+  box-shadow: 1px 1px 6px #1395FF, 0px 0px 9px #1395FF;
 
 }
 
 .box-glow-orange {
 
-  box-shadow: 3px 3px 6px #FF7D13, 0px 0px 9px #FF7D13;
+  box-shadow: 1px 1px 6px #FF7D13, 0px 0px 9px #FF7D13;
 
 }
 
@@ -80,7 +80,7 @@ header .col-md-6 {
 h1 {
 
   font-size: 50px;
-  font-weight: 200;
+  font-weight: 300;
   background-color: inherit;
 
 }
@@ -148,11 +148,7 @@ button.programming {
 
 }
 
-.project-link {
 
-  text-shadow: 3px 3px 9px #FF1395;
-
-}
 
 .showcase hr {
 
@@ -169,10 +165,12 @@ button.programming {
 
 .project h4 {
   color: #FF1395;
+  text-shadow: 3px 3px 9px #FF1395;
   font-size: 30px;
   margin: 0 0 0 0;
   padding: 0.5% 0 0.5% 0;
   border: 3px solid #FF7D13;
+  background-color: #14171A;
 
 }
 
@@ -182,6 +180,7 @@ button.programming {
   text-decoration: none;
   font-weight: 300;
   color: #FF1395;
+  text-shadow: 3px 3px 9px #FF1395;
 
 }
 

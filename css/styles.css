@@ -23,7 +23,7 @@
 
 body .img-responsive {
 
-  border: 3px solid #1395FF;
+  border: 1px solid #1395FF;
 
 }
 
@@ -113,19 +113,25 @@ button {
   font-size: 120%;
   background-color: inherit;
   padding: 0.5% 0.24%;
-  margin: 0 1%;
+  margin: 1%;
 }
+
+button:hover {
+  box-shadow: 3px 3px 9px #FF7D13, -1px -1px 6px #FF7D13;
+  text-shadow: 1px 1px 6px #1395FF;
+}
+
 button.science {
-  border: 3px solid #FF7D13;
+  border: 1px solid #FF7D13;
 }
 
 button.engineering {
-  border: 3px solid #FF7D13;
+  border: 1px solid #FF7D13;
 
 }
 
 button.programming {
-  border: 3px solid #FF7D13;
+  border: 1px solid #FF7D13;
 
 }
 
@@ -137,14 +143,14 @@ button.programming {
 
 .showcase .jumbotron {
 
-  padding: 0 0 0 0;
+  padding: 0;
   border: 0 none;
 
 }
 
 .project {
 
-  margin: 0 0 1% 0;
+  margin: 3% 0;
 
 }
 
@@ -152,14 +158,14 @@ button.programming {
 
 .showcase hr {
 
-  border-top: 3px solid #FF7D13;
+  border-top: 1px solid #FF7D13;
 
 }
 
 .showcase h3 {
 
-  margin: 0 0 1% 0;
-  padding: 0 0 0 1%;
+  margin: 1% 0 3%;
+  padding: 0;
 
 }
 
@@ -169,7 +175,7 @@ button.programming {
   font-size: 30px;
   margin: 0 0 0 0;
   padding: 0.5% 0 0.5% 0;
-  border: 3px solid #FF7D13;
+  border: 1px solid #1395FF;
   background-color: #14171A;
 
 }

@@ -19,8 +19,6 @@ Programming, Engineering and Science
 # ToDo:
 -Make the focal points and headline coherent (if I'm a Frontend Engineer, that should be the default emphasis of everything else on the page, etc.).
 
--Add projects for the other subject areas, and make them show up when their respective button is clicked.
-
 -Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.
 
 -Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
@@ -29,4 +27,6 @@ Programming, Engineering and Science
 
 -Use some filtering to improve atmospherics.
 
--Reposition sections to improve presentation impact. 
+-Reposition sections to improve presentation impact.
+
+-Minimize number of CSS rules and classes.

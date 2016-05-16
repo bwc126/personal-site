@@ -10,6 +10,23 @@ This version made by Brian W Coe
 A few months after the Udacity FEND project was successfully submitted, this site became the nucleus of my personal website. I gave it a slick, dark neon aesthetic while otherwise maintaining the minimalistic feel of the original, making a few other changes as well.
 
 ### The spotlight
-
+Spotlight changes when the mouse enters an image for one of the projects on the page. This area also uses lower resolution images when loaded on a smaller viewport.
 
 ### The subject areas
+Programming, Engineering and Science
+
+
+# ToDo:
+-Make the focal points and headline coherent (if I'm a Frontend Engineer, that should be the default emphasis of everything else on the page, etc.).
+
+-Add projects for the other subject areas, and make them show up when their respective button is clicked.
+
+-Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.
+
+-Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
+
+-Use a background image.
+
+-Use some filtering to improve atmospherics.
+
+-Reposition sections to improve presentation impact. 

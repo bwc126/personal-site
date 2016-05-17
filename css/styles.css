@@ -29,19 +29,19 @@ body .img-responsive {
 
 .text-glow-blue {
 
-  text-shadow: 3px 3px 9px #1395FF;
+  text-shadow: 1px 1px 6px #1395FF;
 
 }
 
 .text-glow-pink {
 
-  text-shadow: 3px 3px 9px #FF1395;
+  text-shadow: 1px 1px 6px #FF1395;
 
 }
 
 .box-glow-blue {
 
-  box-shadow: 1px 1px 6px #1395FF, 0px 0px 9px #1395FF;
+  box-shadow: 1px 1px 6px #1395FF, 0px 0px 6px #1395FF;
 
 }
 
@@ -52,7 +52,9 @@ body .img-responsive {
 }
 
 .box-glow-orange-xtra {
+
   box-shadow: 1px 1px 6px #FF7D13, 0px 0px 9px #FF7D13;
+
 }
 
 
@@ -115,8 +117,9 @@ h2 {
 /*section: showcase*/
 button {
   font-size: 120%;
+  font-weight: 600;
   background-color: inherit;
-  padding: 0.5% 0.24%;
+  padding: 3% 0.24%;
   margin: 1%;
 }
 

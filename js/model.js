@@ -5,21 +5,24 @@ var prog = {
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   },
   1: {
     project: "",
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   },
   2: {
     project: "",
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   }
 };
 var engi = {
@@ -28,21 +31,24 @@ var engi = {
     link: "https://github.com/bwc126/hydra-delta",
     src: "images/S/Hydra2-S.png",
     srcset: "images/M/Hydra2-M.png 800w, images/L/Hydra2-L.png 1200w",
-    desc: "The Hydra-Delta is my personal 3D printer design. It's based on my experience with buiding printers designed by others, specifically the Eventorbot and RichRap, and inspired by other Delta-configuration printers."
+    desc: "The Hydra-Delta is my personal 3D printer design. It's based on my experience with buiding printers designed by others, specifically the Eventorbot and RichRap, and inspired by other Delta-configuration printers.",
+    domain: "github"
   },
   1: {
     project: "",
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   },
   2: {
     project: "",
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   }
 };
 var sci = {
@@ -51,20 +57,23 @@ var sci = {
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   },
   1: {
     project: "",
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   },
   2: {
     project: "",
     link: "",
     src: "",
     srcset: "",
-    desc: ""
+    desc: "",
+    domain: ""
   }
 };

@@ -8,30 +8,61 @@
   $("#programming").click(function() {
     console.log("Programming active");
     data = prog;
-    renderProjectText;
-    renderProjectImages;
-    setSpotlightTriggers;
+    renderProjectText();
+    renderProjectLinks();
+    renderProjectImages();
+    setSpotlightTriggers();
+    renderProjectLinkDomains();
+    renderProjectModals();
   });
   $("#engineering").click(function() {
     console.log("Engineering Active");
     data = engi;
-    renderProjectText;
-    renderProjectImages;
-    setSpotlightTriggers;
+    renderProjectText();
+    renderProjectLinks();
+    renderProjectImages();
+    setSpotlightTriggers();
+    renderProjectLinkDomains();
+    renderProjectModals();
   });
   $("#science").click(function() {
     console.log("Science Active");
     data = sci;
-    renderProjectText;
-    renderProjectImages;
-    setSpotlightTriggers;
+    renderProjectText();
+    renderProjectLinks();
+    renderProjectImages();
+    setSpotlightTriggers();
+    renderProjectLinkDomains();
+    renderProjectModals();
   });
   // renderProjectText prepares the textual content of each project; this function is called when a button is pressed and a new subject area of content needs to be loaded.
   function renderProjectText() {
     projects = $(".project h4");
+    console.dir(projects);
     $(projects[0]).text(data[0].project);
     $(projects[1]).text(data[1].project);
     $(projects[2]).text(data[2].project);
+  };
+  function renderProjectLinks() {
+    // Populate links with correct urls.
+    projects = $(".project-link");
+    $(projects[0]).attr("href", data[0].link);
+    $(projects[1]).attr("href", data[1].link);
+    $(projects[2]).attr("href", data[2].link);
+  };
+  function renderProjectLinkDomains() {
+    // Render correct domain for project link, which is the text that's actually displayed for the link.
+    projects = $(".project-link");
+    $(projects[0]).text(data[0].domain);
+    $(projects[1]).text(data[1].domain);
+    $(projects[2]).text(data[2].domain);
+  };
+  function renderProjectModals() {
+    // Render projects in the modal, including: name, image, and descriptive text.
+    projects = $(".modal-dialog p");
+    $(projects[0]).text(data[0].desc);
+    $(projects[1]).text(data[1].desc.valueOf());
+    $(projects[2]).text(data[2].desc.valueOf());
   };
   // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called).
   function renderProjectImages() {

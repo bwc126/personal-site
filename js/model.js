@@ -6,7 +6,8 @@ var prog = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   },
   1: {
     project: "",
@@ -14,7 +15,8 @@ var prog = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   },
   2: {
     project: "",
@@ -22,7 +24,8 @@ var prog = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   }
 };
 var engi = {
@@ -32,7 +35,8 @@ var engi = {
     src: "images/S/Hydra2-S.png",
     srcset: "images/M/Hydra2-M.png 800w, images/L/Hydra2-L.png 1200w",
     desc: "The Hydra-Delta is my personal 3D printer design. It's based on my experience with buiding printers designed by others, specifically the Eventorbot and RichRap, and inspired by other Delta-configuration printers.",
-    domain: "github"
+    domain: "github",
+    thumb: "something.png"
   },
   1: {
     project: "",
@@ -40,7 +44,8 @@ var engi = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   },
   2: {
     project: "",
@@ -48,7 +53,8 @@ var engi = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   }
 };
 var sci = {
@@ -58,7 +64,8 @@ var sci = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   },
   1: {
     project: "",
@@ -66,7 +73,8 @@ var sci = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   },
   2: {
     project: "",
@@ -74,6 +82,7 @@ var sci = {
     src: "",
     srcset: "",
     desc: "testing testing",
-    domain: "DOMO"
+    domain: "DOMO",
+    thumb: "something.png"
   }
 };

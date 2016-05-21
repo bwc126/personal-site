@@ -1,11 +1,12 @@
-# Project-1-Portfolio
+~~# Project-1-Portfolio
 
 Portfolio project (Project 1) for the Udacity Front-End Developer Nanodegree.
 
-Project is an exercise in learning basic HTML and CSS, while making something worth showing to other learners and those interested in seeing a progression of past work.
-This version made by Brian W Coe
+Project is an exercise in learning basic HTML and CSS, while making something worth showing to other learners and those interested in seeing a progression of past work.~~
 
-## Making it my own
+This version made by **Brian W Coe**
+
+## Making it my own **Personal Site**
 
 A few months after the Udacity FEND project was successfully submitted, this site became the nucleus of my personal website. I gave it a slick, dark neon aesthetic while otherwise maintaining the minimalistic feel of the original, making a few other changes as well.
 
@@ -19,7 +20,7 @@ Programming, Engineering and Science
 # ToDo:
 -Make the focal points and headline coherent (if I'm a Frontend Engineer, that should be the default emphasis of everything else on the page, etc.).
 
--Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.
+-~~Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.~~
 
 -Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
 
@@ -33,4 +34,6 @@ Programming, Engineering and Science
 
 -"Fade-in" spotlight image change.
 
--Use thumbnails for project images, 'src' data in the model should only apply to spotlight
+-~~Use thumbnails for project images, 'src' data in the model should only apply to spotlight.~~
+
+-Set image alts depending on dynamic content.

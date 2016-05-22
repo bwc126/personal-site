@@ -31,45 +31,63 @@
   }
   // renderProjectText prepares the textual content of each project; this function is called when a button is pressed and a new subject area of content needs to be loaded.
   function renderProjectText() {
-    projects = $(".project h4");
-    console.dir(projects);
-    $(projects[0]).text(data[0].project);
-    $(projects[1]).text(data[1].project);
-    $(projects[2]).text(data[2].project);
+    // projects = $(".project h4");
+    // console.dir(projects);
+    // $(projects[0]).text(data[0].project);
+    // $(projects[1]).text(data[1].project);
+    // $(projects[2]).text(data[2].project);
+    $(".project h4").each(function(index) {
+      $(this).text(data[index].project);
+    });
   };
   function renderProjectLinks() {
     // Populate links with correct urls.
-    projects = $(".project-link");
-    $(projects[0]).attr("href", data[0].link);
-    $(projects[1]).attr("href", data[1].link);
-    $(projects[2]).attr("href", data[2].link);
+    // projects = $(".project-link");
+    // $(projects[0]).attr("href", data[0].link);
+    // $(projects[1]).attr("href", data[1].link);
+    // $(projects[2]).attr("href", data[2].link);
+    $(".project-link").each(function(index) {
+      $(this).attr("href", data[index].link);
+    });
   };
   function renderProjectLinkDomains() {
     // Render correct domain for project link, which is the text that's actually displayed for the link.
-    projects = $(".project-link");
-    $(projects[0]).text(data[0].domain);
-    $(projects[1]).text(data[1].domain);
-    $(projects[2]).text(data[2].domain);
+    // projects = $(".project-link");
+    // $(projects[0]).text(data[0].domain);
+    // $(projects[1]).text(data[1].domain);
+    // $(projects[2]).text(data[2].domain);
+    $(".project-link").each(function(index) {
+      $(this).text(data[index].domain);
+    });
   };
   function renderProjectModals() {
     // Render projects in the modal, including: name, image, and descriptive text.
-    projects = $(".modal-dialog p");
-    $(projects[0]).text(data[0].desc);
-    $(projects[1]).text(data[1].desc);
-    $(projects[2]).text(data[2].desc);
+    // projects = $(".modal-dialog p");
+    // $(projects[0]).text(data[0].desc);
+    // $(projects[1]).text(data[1].desc);
+    // $(projects[2]).text(data[2].desc);
+    $(".modal-dialog p").each(function(index) {
+      $(this).text(data[index].desc);
+    });
   };
   function renderProjectModalImages() {
-    projects = $(".modal-dialog img");
-    $(projects[0]).attr("src", data[0].thumb);
-    $(projects[1]).attr("src", data[1].thumb);
-    $(projects[2]).attr("src", data[2].thumb);
+    // projects = $(".modal-dialog img");
+    // $(projects[0]).attr("src", data[0].thumb);
+    // $(projects[1]).attr("src", data[1].thumb);
+    // $(projects[2]).attr("src", data[2].thumb);
+    $(".modal-dialog img").each(function(index) {
+      $(this).attr("src", data[index].thumb);
+    });
   }
   // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called).
   function renderProjectImages() {
-    projects = $(".project img");
-    $(projects[0]).attr('src', data[0].thumb);
-    $(projects[1]).attr('src', data[1].thumb);
-    $(projects[2]).attr('src', data[2].thumb);
+    // projects = $(".project img");
+    // $(projects[0]).attr('src', data[0].thumb);
+    // $(projects[1]).attr('src', data[1].thumb);
+    // $(projects[2]).attr('src', data[2].thumb);
+    $(".project img").each(function(index) {
+      $(this).attr('src', data[index].thumb);
+    });
   };
   // For loop construction doesn't play nicely with serial event listener setting, so specific code is written for each project so that mouseenter on its image causes the spotlight image to change.
   function setSpotlightTriggers() {

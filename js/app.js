@@ -91,22 +91,28 @@
   };
   // For loop construction doesn't play nicely with serial event listener setting, so specific code is written for each project so that mouseenter on its image causes the spotlight image to change.
   function setSpotlightTriggers() {
-    projects = $(".project img");
-    $(projects[0]).mouseenter(function() {
-      $('.jumbotron img').attr('src', data[0].src);
-      $('.jumbotron img').attr('srcset',data[0].srcset);
-      console.log("Project 0 has spotlight");
-    });
-    $(projects[1]).mouseenter(function() {
-      $('.jumbotron img').attr('src', data[1].src);
-      $('.jumbotron img').attr('srcset',data[1].srcset);
-      console.log("Project 1 has spotlight");
-    });
-    $(projects[2]).mouseenter(function() {
-      $('.jumbotron img').attr('src', data[2].src);
-      $('.jumbotron img').attr('srcset',data[2].srcset);
-      console.log("Project 2 has spotlight");
-    });
+    // projects = $(".project img");
+    // $(projects[0]).mouseenter(function() {
+    //   $('.jumbotron img').attr('src', data[0].src);
+    //   $('.jumbotron img').attr('srcset',data[0].srcset);
+    //   console.log("Project 0 has spotlight");
+    // });
+    // $(projects[1]).mouseenter(function() {
+    //   $('.jumbotron img').attr('src', data[1].src);
+    //   $('.jumbotron img').attr('srcset',data[1].srcset);
+    //   console.log("Project 1 has spotlight");
+    // });
+    // $(projects[2]).mouseenter(function() {
+    //   $('.jumbotron img').attr('src', data[2].src);
+    //   $('.jumbotron img').attr('srcset',data[2].srcset);
+    //   console.log("Project 2 has spotlight");
+    // });
+    $(".project img").each(function(index) {
+      $(this).mouseenter(function() {
+        $('.jumbotron img').attr('src', data[index].src);
+        $('.jumbotron img').attr('srcset',data[index].srcset);
+      })
+    })
   };
   setSpotlightTriggers();
 })(jQuery);

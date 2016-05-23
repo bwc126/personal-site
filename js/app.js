@@ -61,6 +61,10 @@
     $(".project img").each(function(index) {
       $(this).attr('src', data[index].thumb);
     });
+    $(".project img").each(function(index) {
+      var msg = 'This is the image for ' + data[index].project;
+      $(this).attr('alt', msg);
+    });
   };
   // For loop construction doesn't play nicely with serial event listener setting, so specific code is written for each project so that mouseenter on its image causes the spotlight image to change.
   function setSpotlightTriggers() {

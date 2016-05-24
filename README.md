@@ -33,7 +33,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 -Minimize number of CSS rules and classes.
 
--"Fade-in" spotlight image change.
+-~~"Fade-in" spotlight image change.~~
 
 -~~Use thumbnails for project images, 'src' data in the model should only apply to spotlight.~~
 

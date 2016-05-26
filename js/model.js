@@ -44,27 +44,27 @@ var engi = {
     src: "",
     srcset: "",
     desc: "Model and prototype a microfluidic chip for general organic chemistry use, demonstrating simplicity and modularity as part of a larger additive manufacturing project",
-    domain: "DOMO",
+    domain: "GITHUB",
     thumb: "something.png"
   },
   2: {
-    project: "",
+    project: "Multimaterial Electrojetting",
     link: "www",
     src: "",
     srcset: "",
-    desc: "testing testing",
-    domain: "DOMO",
+    desc: "Model and prototype micronozzles capable of precise, high-throughput printing with a wide range of working material viscosities, disperity, and compositions",
+    domain: "GITHUB",
     thumb: "something.png"
   }
 };
 var sci = {
   0: {
-    project: "",
+    project: "Microphotography",
     link: "www",
     src: "",
     srcset: "",
-    desc: "testing testing",
-    domain: "DOMO",
+    desc: "Assess microbiological diversity in local waterways, illustrating ecological complexity of suburban ecosystems",
+    domain: "YOUTUBE",
     thumb: "something.png"
   },
   1: {

@@ -23,18 +23,19 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 -~~Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.~~
 
--Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
-
--Use a background image.
-
--Use some filtering to improve atmospherics.
-
--Reposition sections to improve presentation impact.
-
--Minimize number of CSS rules and classes.
-
 -~~"Fade-in" spotlight image change.~~
 
 -~~Use thumbnails for project images, 'src' data in the model should only apply to spotlight.~~
 
 -~~Set image alts depending on dynamic content.~~
+
+-Reposition sections to improve presentation impact.
+
+-Improve responsiveness on mobile.
+
+
+-Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
+
+-Use some filtering to improve atmospherics + Use a background image = perhaps a dynamic raindrop effect over a background image could do the trick?
+
+-Minimize number of CSS rules and classes.

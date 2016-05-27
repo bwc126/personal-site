@@ -59,7 +59,7 @@ var engi = {
 };
 var sci = {
   0: {
-    project: "Microphotography",
+    project: "Micro photography",
     link: "www",
     src: "",
     srcset: "",
@@ -68,11 +68,11 @@ var sci = {
     thumb: "something.png"
   },
   1: {
-    project: "",
+    project: "Characterizing Microparticles",
     link: "www",
     src: "",
     srcset: "",
-    desc: "testing testing",
+    desc: "Characterize microparticles produced by a low-cost microfluidic technique for multilayer encapsulation",
     domain: "DOMO",
     thumb: "something.png"
   },

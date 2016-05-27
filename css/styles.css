@@ -11,8 +11,10 @@
 }
 
 .modal-open .row {
+
   filter: url('#blur');
   filter: blur(3px);
+
 }
 
 .ambience {
@@ -85,7 +87,7 @@ header .col-md-6 {
 
 h1 {
 
-  font-size: 50px;
+  font-size: 333%;
   font-weight: 300;
   background-color: inherit;
 
@@ -94,7 +96,7 @@ h1 {
 h2 {
 
   font-weight: 300;
-  font-size: 20px;
+  font-size: 111%;
   margin: 0 0 0 0;
   background-color: inherit;
 
@@ -116,28 +118,37 @@ h2 {
 
 /*section: showcase*/
 button {
+
   font-size: 120%;
   font-weight: 600;
   background-color: inherit;
   padding: 3% 0.24%;
   margin: 1%;
+
 }
 
 button:hover {
+
   box-shadow: 0px 0px 9px #FF7D13, 0px 0px 12px #FF7D13;
   text-shadow: 0px 0px 12px #1395FF;
+
 }
 
 button.science {
+
   border: 1px solid #FF7D13;
+
 }
 
 button.engineering {
+
   border: 1px solid #FF7D13;
+
 
 }
 
 button.programming {
+
   border: 1px solid #FF7D13;
 
 }
@@ -177,9 +188,10 @@ button.programming {
 }
 
 .project h4 {
+
   color: #FF1395;
   text-shadow: 3px 3px 9px #FF1395;
-  font-size: 30px;
+  font-size: 231%;
   margin: 0 0 0 0;
   padding: 0.5% 0 0.5% 0;
   border: 1px solid #1395FF;
@@ -189,7 +201,7 @@ button.programming {
 
 .project a {
 
-  font-size: 20px;
+  font-size: 165%;
   text-decoration: none;
   font-weight: 300;
   color: #FF1395;

@@ -31,7 +31,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 -Reposition sections to improve presentation impact.
 
--Improve responsiveness on mobile.
+~~-Improve responsiveness on mobile.~~
 
 -Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
 

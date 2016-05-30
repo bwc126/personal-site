@@ -77,7 +77,7 @@ var sci = {
     thumb: "something.png"
   },
   2: {
-    project: "",
+    project: "Chemical Spectrography",
     link: "www",
     src: "",
     srcset: "",

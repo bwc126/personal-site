@@ -35,6 +35,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 -Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
 
--Use some filtering to improve atmospherics + Use a background image = perhaps a dynamic raindrop effect over a background image could do the trick?
+-Use some filtering to improve atmospherics + ~~Use a background image~~ = perhaps a dynamic raindrop effect over a background image could do the trick?
+
+-Improve readability of font vs. background
 
 -Minimize number of CSS rules and classes.

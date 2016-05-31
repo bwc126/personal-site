@@ -8,6 +8,7 @@
   font-family: "Lato", sans-serif;
   color: #1395FF;
 
+
 }
 
 .modal-open .row {
@@ -19,7 +20,8 @@
 
 .ambience {
 
-  background-color: #14171A;
+  background: #14171A url("../images/tokyo-neon3.png") no-repeat fixed center;
+
 
 }
 

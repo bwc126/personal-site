@@ -19,24 +19,26 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 
 # ToDo:
--Make the focal points and headline coherent (if I'm a Frontend Engineer, that should be the default emphasis of everything else on the page, etc.).
+- Make the focal points and headline coherent (if I'm a Frontend Engineer, that should be the default emphasis of everything else on the page, etc.).
 
--~~Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.~~
+- Populate content areas.
 
--~~"Fade-in" spotlight image change.~~
+- Reposition sections to improve presentation impact.
 
--~~Use thumbnails for project images, 'src' data in the model should only apply to spotlight.~~
+- Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
 
--~~Set image alts depending on dynamic content.~~
+- Minimize number of CSS rules and classes.
 
--Reposition sections to improve presentation impact.
+- ~~Improve readability of font vs. background.~~
 
-~~-Improve responsiveness on mobile.~~
+- ~~Set image alts depending on dynamic content.~~
 
--Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
+- ~~Improve responsiveness on mobile.~~
 
--Use some filtering to improve atmospherics + ~~Use a background image~~ = perhaps a dynamic raindrop effect over a background image could do the trick?
+- ~~Use some filtering to improve atmospherics~~ + ~~Use a background image~~ = perhaps a dynamic raindrop effect over a background image could do the trick?
 
--Improve readability of font vs. background
+- ~~Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.~~
 
--Minimize number of CSS rules and classes.
+- ~~"Fade-in" spotlight image change.~~
+
+- ~~Use thumbnails for project images, 'src' data in the model should only apply to spotlight.~~

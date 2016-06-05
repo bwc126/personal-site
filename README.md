@@ -7,7 +7,7 @@ A few months after the Udacity FEND project was successfully submitted, this sit
 Since finishing the core projects of the FEND in early Q2 of 2016, I've found the need to have an-up-to-date and comprehensive showcase of my talents. This is also in the interest of completing the career counseling portion of the FEND, and graduating the nanodegree.
 
 ### To Run
-Open index.html in something later than IE8 (and hopefully not IE ;)).
+Open index.html in something later than IE8 (and hopefully not IE).
 
 ## Key Features
 
@@ -28,17 +28,3 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 - Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.
 
 - Minimize number of CSS rules and classes.
-
-- ~~Improve readability of font vs. background.~~
-
-- ~~Set image alts depending on dynamic content.~~
-
-- ~~Improve responsiveness on mobile.~~
-
-- ~~Use some filtering to improve atmospherics~~ + ~~Use a background image~~ = perhaps a dynamic raindrop effect over a background image could do the trick?
-
-- ~~Make sure each project for each subject changes the spotlight, and does so with a whole set of responsive images, utilizing 'srcset' property and the basic 'src' property.~~
-
-- ~~"Fade-in" spotlight image change.~~
-
-- ~~Use thumbnails for project images, 'src' data in the model should only apply to spotlight.~~

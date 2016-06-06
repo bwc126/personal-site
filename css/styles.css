@@ -214,6 +214,18 @@ button.programming {
 
 /*section: modal*/
 
+.modal-dialog {
+
+  font-weight: 600;
+
+}
+
+.modal-dialog h4 {
+
+  font-weight: 600;
+
+}
+
 p {
 
   margin: 1% 0 0 0;

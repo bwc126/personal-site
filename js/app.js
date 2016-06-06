@@ -49,10 +49,15 @@
     $(".modal-dialog p").each(function(index) {
       $(this).text(data[index].desc);
     });
+    $(".modal-dialog h4").each(function(index) {
+      $(this).text(data[index].project);
+    })
   };
   function renderProjectModalImages() {
     $(".modal-dialog img").each(function(index) {
       $(this).attr("src", data[index].thumb);
+      var msg = 'This is the image for ' + data[index].project;
+      $(this).attr('alt', msg);
     });
   };
   // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called).

@@ -87,4 +87,5 @@
     });
   };
   setSpotlightTriggers();
+  $("#programming").click();
 })(jQuery);

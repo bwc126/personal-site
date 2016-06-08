@@ -220,6 +220,28 @@ button.programming {
 
 }
 
+.modal-dialog button {
+
+  font-size: 120%;
+  font-weight: 600;
+  background-color: inherit;
+  padding: 3% 0.24%;
+  margin: 1%;
+  background-color: transparent;
+  border: 2px solid #1395FF;
+
+}
+
+.modal-dialog button:hover {
+
+  font-size: 120%;
+  font-weight: 600;
+  background-color: inherit;
+  padding: 3% 0.24%;
+  margin: 1%;
+
+}
+
 .modal-dialog h4 {
 
   font-weight: 600;

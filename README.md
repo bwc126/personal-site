@@ -29,4 +29,4 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Minimize number of CSS rules and classes.
 
-- Make modals legible and accurate.
+- ~~Make modals legible and accurate.~~

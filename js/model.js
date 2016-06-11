@@ -14,7 +14,7 @@ var prog = {
     link: "https://github.com/bwc126/neighborhood-map",
     src: "",
     srcset: "",
-    desc: "Simple page implementing Google Maps and Wikipedia API, with interactive points of interest",
+    desc: "Simple page implementing Google Maps and Wikipedia API, with interactive points of interest.",
     domain: "GITHUB",
     thumb: "something.png"
   },
@@ -23,7 +23,7 @@ var prog = {
     link: "https://github.com/bwc126/frontend-nanodegree-arcade-game",
     src: "",
     srcset: "",
-    desc: "A frogger clone made using HTML5 Canvas, engine provided by Udacity, but game classes and functions developed by me.",
+    desc: "A frogger clone made using HTML5 Canvas, engine provided by Udacity, but game classes and functions developed by me. An excellent learning opportunity for the programming concepts of separation of concerns, Object-Oriented Programming, and continuous looping constructs.",
     domain: "GITHUB",
     thumb: "something.png"
   }
@@ -43,7 +43,7 @@ var engi = {
     link: "www",
     src: "",
     srcset: "",
-    desc: "Model and prototype a microfluidic chip for general organic chemistry use, demonstrating simplicity and modularity as part of a larger additive manufacturing project",
+    desc: "Model and prototype an Open Source microfluidic chip for general organic chemistry use, demonstrating simplicity and modularity as part of a larger additive manufacturing project.",
     domain: "GITHUB",
     thumb: "something.png"
   },
@@ -52,7 +52,7 @@ var engi = {
     link: "www",
     src: "",
     srcset: "",
-    desc: "Model and prototype micronozzles capable of precise, high-throughput printing with a wide range of working material viscosities, disperity, and compositions",
+    desc: "Model and prototype micronozzles capable of precise, high-throughput printing with a wide range of working material viscosities, disperity, and compositions.",
     domain: "GITHUB",
     thumb: "something.png"
   }
@@ -63,7 +63,7 @@ var sci = {
     link: "www",
     src: "",
     srcset: "",
-    desc: "Assess microbiological diversity in local waterways, illustrating ecological complexity of suburban ecosystems",
+    desc: "Assess microbiological diversity in local waterways, illustrating ecological complexity of suburban ecosystems.",
     domain: "YOUTUBE",
     thumb: "something.png"
   },
@@ -72,7 +72,7 @@ var sci = {
     link: "www",
     src: "",
     srcset: "",
-    desc: "Characterize microparticles produced by a low-cost microfluidic technique for multilayer encapsulation",
+    desc: "Characterize microparticles produced by a low-cost microfluidic technique for multilayer encapsulation.",
     domain: "DOMO",
     thumb: "something.png"
   },
@@ -81,7 +81,7 @@ var sci = {
     link: "www",
     src: "",
     srcset: "",
-    desc: "testing testing",
+    desc: "Use a low-cost, open-source spectrographic system to characterize products and intermediates from reactions carried out in microfluidic reactionware.",
     domain: "DOMO",
     thumb: "something.png"
   }

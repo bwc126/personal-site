@@ -226,6 +226,18 @@ button.programming {
 
 }
 
+.modal-header, .modal-footer {
+
+  border: none;
+
+}
+
+.modal hr {
+
+  border: 1px solid #FF7D13;
+
+}
+
 .modal-dialog button {
 
   color: inherit;
@@ -267,7 +279,6 @@ button.programming {
 }
 
 p {
-
 
   margin: 1% 0 0 0;
 

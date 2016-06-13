@@ -60,7 +60,7 @@
       $(this).attr('alt', msg);
     });
   };
-  // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called).
+  // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called). Also updates the 'alt' attribute for each image. 
   function renderProjectImages() {
     $(".project img").each(function(index) {
       $(this).attr('src', data[index].thumb);

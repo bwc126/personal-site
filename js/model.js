@@ -5,7 +5,7 @@ var prog = {
     link: "https://github.com/bwc126/nutrition-tracker",
     src: "",
     srcset: "",
-    desc: "A calorie tracker with built-in search (via Nutritionix), implemented in Backbone.js",
+    desc: "A calorie tracker with built-in search (via Nutritionix), implemented in Backbone.js. Features include use of Google Charts to visualize trends in calorie consumption, and a calendar date picker. This project improved my familiarity with the MVC paradigm, using API's, and pre-made code.",
     domain: "GITHUB",
     thumb: "something.png"
   },
@@ -14,7 +14,7 @@ var prog = {
     link: "https://github.com/bwc126/neighborhood-map",
     src: "",
     srcset: "",
-    desc: "Simple page implementing Google Maps and Wikipedia API, with interactive points of interest.",
+    desc: "Single page implementing Google Maps and Wikipedia API, with interactive points of interest. First use of a MVVM framework: Knockout.",
     domain: "GITHUB",
     thumb: "something.png"
   },

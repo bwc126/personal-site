@@ -59,7 +59,7 @@ var engi = {
 };
 var sci = {
   0: {
-    project: "Micro photography",
+    project: "Micro Photography",
     link: "www",
     src: "",
     srcset: "",
@@ -72,7 +72,7 @@ var sci = {
     link: "www",
     src: "",
     srcset: "",
-    desc: "Characterize microparticles produced by a low-cost microfluidic technique for multilayer encapsulation.",
+    desc: "Characterize microparticles produced by a low-cost microfluidic technique for multilayer encapsulation. An Open Source laser-based Brownian motion detector was used to measure disperisty and demonstrate synthesis technique precision and repeatability.",
     domain: "DOMO",
     thumb: "something.png"
   },

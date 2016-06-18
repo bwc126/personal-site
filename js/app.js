@@ -60,10 +60,11 @@
       $(this).attr('alt', msg);
     });
   };
-  // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called). Also updates the 'alt' attribute for each image. 
+  // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called). Also updates the 'alt' attribute for each image.
   function renderProjectImages() {
+    var pathPrefix = "images/thumbs/";
     $(".project img").each(function(index) {
-      $(this).attr('src', data[index].thumb);
+      $(this).attr('src', pathPrefix + data[index].thumb);
     });
     $(".project img").each(function(index) {
       var msg = 'This is the image for ' + data[index].project;

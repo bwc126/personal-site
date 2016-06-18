@@ -12,11 +12,11 @@ var prog = {
   1: {
     project: "Interactive Map",
     link: "https://github.com/bwc126/neighborhood-map",
-    src: "",
-    srcset: "",
+    src: "images/S/map-S.png",
+    srcset: "images/M/map-M.png 800w, images/L/map-L.png 1200w",
     desc: "Single page implementing Google Maps and Wikipedia API, with interactive points of interest. First use of a MVVM framework: Knockout.",
     domain: "GITHUB",
-    thumb: "something.png"
+    thumb: "map-thumb.png"
   },
   2: {
     project: "Arcade Game Clone",

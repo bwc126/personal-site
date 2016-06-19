@@ -21,11 +21,11 @@ var prog = {
   2: {
     project: "Arcade Game Clone",
     link: "https://github.com/bwc126/frontend-nanodegree-arcade-game",
-    src: "",
-    srcset: "",
+    src: "images/S/arcade-game-S.png",
+    srcset: "images/M/arcade-game-M.png 800w, images/L/arcade-game-L.png 1200w",
     desc: "A frogger clone made using HTML5 Canvas, engine provided by Udacity, but game classes and functions developed by me. An excellent learning opportunity for the programming concepts of separation of concerns, Object-Oriented Programming, and continuous looping constructs.",
     domain: "GITHUB",
-    thumb: "something.png"
+    thumb: "arcade-game-thumb.png"
   }
 };
 var engi = {

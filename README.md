@@ -19,12 +19,12 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 
 # ToDo:
-- Make the focal points and headline coherent (if I'm a Frontend Engineer, that should be the default emphasis of everything else on the page, etc.).
+- Fix jumping when jumbotron changes. Force all images to be the same size when viewed on a particular viewport. 
 
-- Populate content areas.
+- Populate content areas. (WIP 6/16/16)
 
 - Reposition sections to improve presentation impact.
 
-- ~~Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.~~
-
 - Minimize number of CSS rules and classes.
+
+- ~~Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.~~

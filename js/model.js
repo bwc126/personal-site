@@ -36,16 +36,17 @@ var engi = {
     srcset: "images/M/Hydra2-M.png 800w, images/L/Hydra2-L.png 1200w",
     desc: "The Hydra-Delta is my personal 3D printer design. It's based on my experience with buiding printers designed by others, specifically the Eventorbot and RichRap, and inspired by other Delta-configuration printers.",
     domain: "github",
-    thumb: "images/thumbs/hydra-delta.png"
+    thumb: "hydra-delta.png"
   },
   1: {
     project: "Microfluidic Reactionware",
     link: "www",
-    src: "",
-    srcset: "",
+    src: "images/S/reactionware-S.png",
+    project: "Microfluidic Reactionware",
+    srcset: "images/M/reactionware-M.png 800w, images/L/reactionware-L.png 1200w",
     desc: "Model and prototype an Open Source microfluidic chip for general organic chemistry use, demonstrating simplicity and modularity as part of a larger additive manufacturing project.",
     domain: "GITHUB",
-    thumb: "something.png"
+    thumb: "reactionware-thumb.png"
   },
   2: {
     project: "Multimaterial Electrojetting",

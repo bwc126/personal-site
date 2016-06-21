@@ -19,12 +19,10 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 
 # ToDo:
-- Fix jumping when jumbotron changes. Force all images to be the same size when viewed on a particular viewport. 
+- Fix jumping when jumbotron changes. Force all images to be the same size when viewed on a particular viewport.
 
 - Populate content areas. (WIP 6/16/16)
 
 - Reposition sections to improve presentation impact.
 
 - Minimize number of CSS rules and classes.
-
-- ~~Resolve lack of convincing neon glow, give sufficient margins/padding/etc. for glow to extinct.~~

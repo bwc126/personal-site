@@ -1,4 +1,5 @@
 (function($) {
+  var pathPrefix = "images/thumbs/";
   // data will initially be whatever the default set of projects is, which should be one of the major categories so that they can be reached again later by clicking one of the buttons.
   var data = prog;
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
@@ -55,14 +56,13 @@
   };
   function renderProjectModalImages() {
     $(".modal-dialog img").each(function(index) {
-      $(this).attr("src", data[index].thumb);
+      $(this).attr("src", pathPrefix + data[index].thumb);
       var msg = 'This is the image for ' + data[index].project;
       $(this).attr('alt', msg);
     });
   };
   // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called). Also updates the 'alt' attribute for each image.
   function renderProjectImages() {
-    var pathPrefix = "images/thumbs/";
     $(".project img").each(function(index) {
       $(this).attr('src', pathPrefix + data[index].thumb);
     });

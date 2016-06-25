@@ -20,6 +20,29 @@ Spotlight changes when the mouse enters an image for one of the projects on the 
 
 Programming, Engineering and Science. Key projects/points of interest from each area are detailed via a modal, with a thumbnail and larger images for each.
 
+#### Style Guide
+
+##### Pictures
+
+###### Sizes
+
+- Thumbnails: 380 x 380
+
+- Large: 1200 x 600
+
+- Medium: 800 x 400
+
+- Small: 500 x 250
+
+###### Transparency
+
+- Opacity: 0.66
+
+##### Fonts
+
+- sans-serif
+
+- 100, 300, 600 font weights, never more than necessary for legibility. 
 
 # ToDo:
 

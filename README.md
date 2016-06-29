@@ -60,15 +60,15 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Never more than 2/3rds of view width.
 
-- 2/3rds opage background.
+- 2/3rds opaque background.
 
 - Edge and font glow.
-
-
 
 # ToDo:
 
 - Fix jumping when jumbotron changes. Force all images to be the same size when viewed on a particular viewport.
+
+- Implement jump fix using div with a background image, dynamically changing opacity for transitions. Fade-out -> change url -> fade-in. This should also force viewable area of pics to be same for every pic.
 
 - Populate content areas. (WIP 6/16/16)
 

@@ -64,7 +64,7 @@
   // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called). Also updates the 'alt' attribute for each image.
   function renderProjectImages() {
     $(".project img").each(function(index) {
-      $(this).attr('src', pathPrefix + data[index].thumb);
+      $(this).attr('background-image', pathPrefix + data[index].thumb);
     });
     $(".project img").each(function(index) {
       var msg = 'This is the image for ' + data[index].project;
@@ -87,6 +87,7 @@
       });
     });
   };
+  // TODO: write a new setSpotlightTriggers that fades out the old jumbotron background image, changes the url to the new one, and fades it back in.
   setSpotlightTriggers();
   $("#programming").click();
 })(jQuery);

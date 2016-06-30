@@ -63,10 +63,10 @@
   };
   // renderProjectImages changes the project images based on whatever subject area has been made active (e.g., when the user clicks the respective button, currently this is the only time this should be called). Also updates the 'alt' attribute for each image.
   function renderProjectImages() {
-    $(".project img").each(function(index) {
-      $(this).attr('background-image', pathPrefix + data[index].thumb);
+    $(".project div").each(function(index) {
+      $(this).attr('style', "background-image: url('" + pathPrefix + data[index].thumb + "')");
     });
-    $(".project img").each(function(index) {
+    $(".project div").each(function(index) {
       var msg = 'This is the image for ' + data[index].project;
       $(this).attr('alt', msg);
     });

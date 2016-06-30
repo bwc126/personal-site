@@ -228,10 +228,12 @@ img.transparent {
 
 }
 
-.project img {
+.project div {
 
+  background-image: url("../images/thumbs/hydra-delta.png");
+  height: 300px;
   width: 100%;
-
+  background-position: center;
 }
 
 /*section: modal*/

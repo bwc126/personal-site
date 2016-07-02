@@ -66,7 +66,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 # ToDo:
 
-- Fix jumping when jumbotron changes. Force all images to be the same size when viewed on a particular viewport.
+- Fix jumping when jumbotron changes. Force all images to be the same size when viewed on a particular viewport. (WIP 6/30/16)
 
 - Implement jump fix using div with a background image, dynamically changing opacity for transitions. Fade-out -> change url -> fade-in. This should also force viewable area of pics to be same for every pic.
 

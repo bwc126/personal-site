@@ -182,6 +182,9 @@ img.transparent {
 
   padding: 0;
   border: 0 none;
+  background-image: url("../images/L/arcade-game-L.png");
+  height: 600px;
+  width: 100%;
 
 }
 

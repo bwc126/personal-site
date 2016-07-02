@@ -73,16 +73,16 @@
   };
   // For loop construction doesn't play nicely with serial event listener setting, so specific code is written for each project so that mouseenter on its image causes the spotlight image to change.
   function setSpotlightTriggers() {
-    $(".project img").each(function(index) {
+    $(".project div").each(function(index) {
       // Any time a project image is entered, the spotlight img will fadeout, set new src/srcset according to the project that was entered, and then fade back in.
       $(this).mouseenter(function() {
         // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
-        $(".jumbotron img").fadeOut(function() {
+        $(".jumbotron").fadeOut(function() {
           // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
           $(this).load(function() { $(this).fadeIn(); });
           // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
-          $(".jumbotron img").attr("background-image", data[index].src);
-          $(".jumbotron img").attr("srcset", data[index].srcset);
+          $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
+          // $(".jumbotron img").attr("srcset", data[index].srcset);
         });
       });
     });

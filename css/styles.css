@@ -237,6 +237,8 @@ img.transparent {
   height: 300px;
   width: 100%;
   background-position: center;
+  cursor: pointer;
+
 }
 
 /*section: modal*/

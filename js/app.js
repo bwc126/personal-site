@@ -2,6 +2,7 @@
   var pathPrefix = "images/thumbs/";
   // data will initially be whatever the default set of projects is, which should be one of the major categories so that they can be reached again later by clicking one of the buttons.
   var data = prog;
+  var jumbotron = data[2].project;
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
   $("#programming").click(function() {
     console.log("Programming active");
@@ -77,13 +78,16 @@
       // Any time a project image is entered, the spotlight img will fadeout, set new src/srcset according to the project that was entered, and then fade back in.
       $(this).mouseenter(function() {
         // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
-        $(".jumbotron").fadeOut(function() {
-          // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
-          $(this).load(function() { $(this).fadeIn(); });
-          // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
-          $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
-          // $(".jumbotron img").attr("srcset", data[index].srcset);
-        });
+        if (data[index].project !== jumbotron) {
+          $(".jumbotron").fadeOut(function() {
+            // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
+            $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
+            $(this).load(function() { $(this).fadeIn(); });
+            jumbotron = data[index].project;
+            // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
+            // $(".jumbotron img").attr("srcset", data[index].srcset);
+          });
+        };
       });
     });
   };

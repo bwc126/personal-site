@@ -185,6 +185,7 @@ img.transparent {
   background-image: url("../images/L/arcade-game-L.png");
   height: 600px;
   width: 100%;
+  transition: background-image 3s ease-in-out;
 
 }
 

@@ -79,18 +79,46 @@
       $(this).mouseenter(function() {
         // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
         if (data[index].project !== jumbotron) {
-          $(".jumbotron").fadeIn(function() {
+
             // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
-            $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
-            $(this).load(function() { $(this).fadeOut(); });
+            $(".jumbotron").fadeTo(900,0,"swing");
+            setTimeout($(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')"),1800);
+            setTimeout($(".jumbotron").fadeTo(900,1,"swing"),900);
+
             jumbotron = data[index].project;
             // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
             // $(".jumbotron img").attr("srcset", data[index].srcset);
-          });
-        };
+          };
+
       });
     });
   };
+  // function setSpotlightTriggers() {
+  //   $(".project div").each(function(index) {
+  //     // Any time a project image is entered, the spotlight img will fadeout, set new src/srcset according to the project that was entered, and then fade back in.
+  //     $(this).mouseenter(function() {
+  //       // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
+  //       if (data[index].project !== jumbotron) {
+  //         $(".jumbotron").fadeTo(900, 0, "swing", function() {
+  //
+  //           console.log("fading out...");
+  //           // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
+  //
+  //           $(this).attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
+  //           jumbotron = data[index].project;
+  //           $(this).load(function() {fadeTo(900, 1, "swing" );});
+  //           console.log("Should be fading in...");
+  //           // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
+  //           // $(".jumbotron img").attr("srcset", data[index].srcset);
+  //         });
+  //
+  //
+  //       };
+  //     });
+  //   });
+  // };
+
+
   // TODO: write a new setSpotlightTriggers that fades out the old jumbotron background image, changes the url to the new one, and fades it back in.
   setSpotlightTriggers();
   $("#programming").click();

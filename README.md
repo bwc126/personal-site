@@ -34,6 +34,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Border glow.
 
+- 90 degree corners. 
+
 ###### Sizes
 
 - Thumbnails: 380 x 380
@@ -66,7 +68,6 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 # ToDo:
 
-
 - Center jumbotron, make transparent, fix flashing upon image change. Ensure responsiveness.
 
 - Populate content areas. (WIP 6/16/16)
@@ -74,7 +75,3 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 - Reposition sections to improve presentation impact.
 
 - Minimize number of CSS rules and classes.
-
-- ~~Fix jumping when jumbotron changes. Force all images to be the same size when viewed on a particular viewport. (WIP 6/30/16)~~
-
-- ~~Implement jump fix using div with a background image, dynamically changing opacity for transitions. Fade-out -> change url -> fade-in. This should also force viewable area of pics to be same for every pic.~~

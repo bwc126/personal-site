@@ -34,7 +34,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Border glow.
 
-- 90 degree corners. 
+- 90 degree corners.
 
 ###### Sizes
 
@@ -68,7 +68,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 # ToDo:
 
-- Center jumbotron, make transparent, fix flashing upon image change. Ensure responsiveness.
+- Center jumbotron, make transparent, smooth image transition. Ensure responsiveness.
 
 - Populate content areas. (WIP 6/16/16)
 

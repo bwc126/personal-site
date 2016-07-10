@@ -237,9 +237,11 @@ img.transparent {
 .project div {
 
   background-image: url("../images/thumbs/hydra-delta.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 300px;
   width: 100%;
-  background-position: center;
   cursor: pointer;
 
 }

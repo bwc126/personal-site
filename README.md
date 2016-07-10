@@ -68,10 +68,18 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 # ToDo:
 
-- Center jumbotron, make transparent, smooth image transition. Ensure responsiveness.
+- ~~Center jumbotron, smooth image transition. Ensure responsiveness.~~  
+
+- Make jumbotron transparent.
+
+- Optimize image/file loading.
+
+- Make optimal use of images for responsive design.
 
 - Populate content areas. (WIP 6/16/16)
 
 - Reposition sections to improve presentation impact.
+
+- Give some areas a translucent gray background, for visual variety. 
 
 - Minimize number of CSS rules and classes.

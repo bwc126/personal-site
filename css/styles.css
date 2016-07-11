@@ -118,11 +118,13 @@ h2 {
 }
 
 /*section: showcase*/
+
 button {
 
   font-size: 120%;
   font-weight: 600;
-  background-color: inherit;
+  background-color: #14171A;
+  background-blend-mode: multiply;
   padding: 3% 0.24%;
   margin: 1%;
 
@@ -160,18 +162,6 @@ button.programming {
 
 }
 
-.jumbotron img {
-
-
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-
-  overflow-y: hidden;
-
-}
-
 img.transparent {
 
   opacity: 0;
@@ -183,11 +173,12 @@ img.transparent {
   padding: 0;
   border: 0 none;
   background-image: url("../images/L/arcade-game-L.png");
+  transition: background-image 3s ease-in-out;
   height: 600px;
   width: 100%;
-  transition: background-image 3s ease-in-out;
   text-align: center;
   margin: 3% 0;
+  opacity: 0.66;
 
 }
 

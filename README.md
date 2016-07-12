@@ -70,7 +70,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - ~~Center jumbotron, smooth image transition. Ensure responsiveness.~~  
 
-- Make jumbotron transparent.
+- ~~Make jumbotron transparent.~~
 
 - Optimize image/file loading.
 
@@ -80,6 +80,6 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Reposition sections to improve presentation impact.
 
-- Give some areas a translucent gray background, for visual variety. 
+- Give some areas a translucent gray background, for visual variety.
 
 - Minimize number of CSS rules and classes.

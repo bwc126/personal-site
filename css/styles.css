@@ -61,6 +61,15 @@ body .img-responsive {
 
 }
 
+.dark-bg {
+
+  background-color: rgba(20, 23 ,26, 0.66);
+  margin: 0
+  padding: 0
+  overflow: visible;
+  width: 100%;
+
+}
 
 /*section: header*/
 
@@ -123,10 +132,9 @@ button {
 
   font-size: 120%;
   font-weight: 600;
-  background-color: #14171A;
-  background-blend-mode: multiply;
   padding: 3% 0.24%;
   margin: 1%;
+  background-color: rgba(20, 23 ,26, 0.66);
 
 }
 
@@ -159,12 +167,6 @@ button.programming {
 .jumbotron {
 
   background-color: inherit;
-
-}
-
-img.transparent {
-
-  opacity: 0;
 
 }
 
@@ -211,7 +213,7 @@ img.transparent {
   margin: 0 0 3% 0;
   padding: 1.5% 0 1.5% 0;
   border: 1px solid #1395FF;
-  background-color: #14171A;
+  background-color: rgba(20, 23 ,26, 0.66);
 
 }
 
@@ -293,7 +295,7 @@ img.transparent {
 
 .modal-body {
 
-  background-color: #14171A;
+  background-color: rgba(20, 23 ,26, 0.66);
 
 }
 

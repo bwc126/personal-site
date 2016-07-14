@@ -180,7 +180,7 @@ button.programming {
   width: 100%;
   text-align: center;
   margin: 3% 0;
-  opacity: 0.66;
+  opacity: 0.9;
 
 }
 
@@ -233,6 +233,7 @@ button.programming {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.9;
   height: 300px;
   width: 100%;
   cursor: pointer;

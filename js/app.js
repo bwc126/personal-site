@@ -83,7 +83,7 @@
             // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
             $(".jumbotron").fadeTo(600,0,"swing",function() {
               $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
-              $(".jumbotron").fadeTo(600,0.66,"swing");
+              $(".jumbotron").fadeTo(600,0.9,"swing");
 
             });
 

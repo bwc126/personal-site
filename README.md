@@ -76,6 +76,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Make optimal use of images for responsive design.
 
+- Style overlay, smooth transitions.
+
 - Populate content areas. (WIP 6/16/16)
 
 - Reposition sections to improve presentation impact.

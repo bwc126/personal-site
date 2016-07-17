@@ -135,6 +135,7 @@ button {
   padding: 3% 0.24%;
   margin: 1%;
   background-color: rgba(20, 23 ,26, 0.66);
+  width: 90%;
 
 }
 
@@ -181,6 +182,22 @@ button.programming {
   text-align: center;
   margin: 3%;
   opacity: 0.9;
+
+}
+
+.overlay {
+
+  width: 100%;
+  height: 33%;
+  margin: 18% 0;
+  background-color: rgba(20, 23 ,26, 0.66);
+  opacity: 0;
+
+}
+
+.jumbotron:hover .overlay {
+
+  opacity: 1;
 
 }
 

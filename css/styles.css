@@ -206,6 +206,10 @@ button.programming {
 
 }
 
+.overlay p {
+  font-weight: 400;
+}
+
 .project {
 
   margin: 0 0 3% 0;

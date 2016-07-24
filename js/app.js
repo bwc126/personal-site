@@ -3,7 +3,11 @@
   // data will initially be whatever the default set of projects is, which should be one of the major categories so that they can be reached again later by clicking one of the buttons.
   var data = prog;
   var jumbotron = data[2].project;
-  $(".overlay").html(data[2].desc);
+  renderOverlay(data[2]);
+  function renderOverlay(project) {
+    $(".overlay h3").html(project.project);
+    $(".overlay p").html(project.desc);
+  }
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
 
 
@@ -87,7 +91,7 @@
             $(".jumbotron").fadeTo(600,0,"swing",function() {
               $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
               $(".jumbotron").fadeTo(600,0.9,"swing");
-              $(".overlay").html(data[index].desc);
+              renderOverlay(data[index]);
             });
 
             jumbotron = data[index].project;

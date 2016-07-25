@@ -207,7 +207,16 @@ button.programming {
 }
 
 .overlay p {
+
   font-weight: 400;
+  font-size: 18px;
+
+}
+
+.jumbotron .overlay h3 {
+
+  margin: 0;
+
 }
 
 .project {

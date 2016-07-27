@@ -199,10 +199,17 @@ button.programming {
 
 }
 
+.jumbotron .overlay {
+
+  opacity: 0;
+  transition: 1s opacity ease-in;
+
+}
+
 .jumbotron:hover .overlay {
 
   opacity: 1;
-  transition: 1s;
+  transition: 1s opacity ease-in;
 
 }
 
@@ -212,6 +219,8 @@ button.programming {
   font-size: 18px;
 
 }
+
+
 
 .jumbotron .overlay h3 {
 

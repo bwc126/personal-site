@@ -68,13 +68,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 # ToDo:
 
-- ~~Center jumbotron, smooth image transition. Ensure responsiveness.~~  
-
-- ~~Make jumbotron transparent.~~
-
-- ~~Give some areas a translucent gray background, for visual variety.~~
-
-- Style overlay, ~~smooth transitions.~~
+- Style overlay.
 
 - Optimize image/file loading.
 

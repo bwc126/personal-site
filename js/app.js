@@ -4,13 +4,7 @@
   var data = prog;
   var jumbotron = data[2].project;
   renderOverlay(data[2]);
-  function renderOverlay(project) {
-    $(".overlay h3").html(project.project);
-    $(".overlay p").html(project.desc);
-  }
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
-
-
   $("#programming").click(function() {
     console.log("Programming active");
     data = prog;
@@ -26,6 +20,10 @@
     data = sci;
     renderProjects();
   });
+  function renderOverlay(project) {
+    $(".overlay h3").html(project.project);
+    $(".overlay p").html(project.desc);
+  }
   function renderProjects() {
     renderProjectText();
     renderProjectLinks();
@@ -99,9 +97,6 @@
               $(".jumbotron").fadeTo(600,0.9,"swing");
             }
             ,601);
-
-
-
             jumbotron = data[index].project;
             // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
             // $(".jumbotron img").attr("srcset", data[index].srcset);
@@ -110,9 +105,6 @@
       });
     });
   };
-
-
-
   setSpotlightTriggers();
   $("#programming").click();
 })(jQuery);

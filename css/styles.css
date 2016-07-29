@@ -176,6 +176,9 @@ button.programming {
   padding: 0;
   border: 0 none;
   background-image: url("../images/L/arcade-game-L.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: background-image 3s ease-in-out;
   height: 600px;
   width: 93%;

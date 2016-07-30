@@ -279,7 +279,7 @@ button.programming {
   background-image: url("../images/thumbs/hydra-delta.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
   opacity: 0.9;
   height: 300px;
   width: 100%;

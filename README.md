@@ -68,7 +68,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 # ToDo:
 
-- Style overlay.
+- ~~Style overlay.~~
 
 - Optimize image/file loading.
 
@@ -79,3 +79,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 - Reposition sections to improve presentation impact.
 
 - Minimize number of CSS rules and classes.
+
+- Use parallax.(?)
+
+- Links to running projects or interactive overviews.

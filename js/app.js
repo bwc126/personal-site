@@ -1,3 +1,4 @@
+"use strict";
 (function($) {
   var pathPrefix = "images/thumbs/";
   // data will initially be whatever the default set of projects is, which should be one of the major categories so that they can be reached again later by clicking one of the buttons.

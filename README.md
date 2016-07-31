@@ -70,6 +70,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - ~~Style overlay.~~
 
+- Polish all transitions and glows for smoothness, continuity, and coherence.
+
 - Optimize image/file loading.
 
 - Make optimal use of images for responsive design.

@@ -46,6 +46,14 @@ body .img-responsive {
 .box-glow-blue {
 
   box-shadow: 1px 1px 6px #1395FF, 0px 0px 6px #1395FF;
+  transition: 1s;
+
+}
+
+.box-glow-blue:hover {
+
+  box-shadow: 1px 1px 9px #1395FF, 0px 0px 9px #1395FF;
+  transition: 1s;
 
 }
 
@@ -136,6 +144,7 @@ button {
   margin: 1%;
   background-color: rgba(20, 23 ,26, 0.66);
   width: 90%;
+  transition: 1s;
 
 }
 
@@ -143,6 +152,7 @@ button:hover {
 
   box-shadow: 0px 0px 9px #FF7D13, 0px 0px 12px #FF7D13;
   text-shadow: 0px 0px 12px #1395FF;
+  transition: 1s;
 
 }
 

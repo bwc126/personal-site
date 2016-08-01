@@ -189,7 +189,7 @@ button.programming {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 3s ease-in-out;
+  transition: 3s;
   height: 600px;
   width: 93%;
   text-align: center;

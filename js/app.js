@@ -87,18 +87,16 @@
         if (data[index].project !== jumbotron) {
 
             // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
-            $(".jumbotron").fadeTo(600,0,"swing",function() {
-            });
-            setTimeout(function() {
+            $(".jumbotron").fadeTo(900,0,"swing",function() {
               $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
               renderOverlay(data[index]);
-            }
-            ,600);
-            setTimeout(function() {
-              $(".jumbotron").fadeTo(600,0.9,"swing");
-            }
-            ,601);
-            jumbotron = data[index].project;
+              $(".jumbotron").load(function(){
+                $(".jumbotron").fadeTo(900,0.9,"swing");
+              });
+              jumbotron = data[index].project;
+            });
+
+
             // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
             // $(".jumbotron img").attr("srcset", data[index].srcset);
           };

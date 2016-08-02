@@ -39,7 +39,15 @@ body .img-responsive {
 
 .text-glow-pink {
 
-  text-shadow: 1px 1px 6px #FF1395;
+  text-shadow: 1px 1px 3px #FF1395;
+  transition: 1s;
+
+}
+
+.text-glow-pink:hover {
+
+  text-shadow: 1px 1px 9px #FF1395;
+  transition: 1s;
 
 }
 
@@ -265,7 +273,7 @@ button.programming {
 .project h4 {
 
   color: #FF1395;
-  text-shadow: 3px 3px 9px #FF1395;
+  /*text-shadow: 3px 3px 9px #FF1395;*/
   font-size: 231%;
   margin: 0 0 3% 0;
   padding: 1.5% 0 1.5% 0;

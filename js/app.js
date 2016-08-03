@@ -83,13 +83,13 @@
     $(".project div").each(function(index) {
       // Any time a project image is entered, the spotlight img will fadeout, set new src/srcset according to the project that was entered, and then fade back in.
       $(this).mouseenter(function() {
-        // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
+        // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded. 
         if (data[index].project !== jumbotron) {
-
-            // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeIn, ensuring our image is ready before we attempt to fade it back in.
-            $(".jumbotron").fadeTo(900,0,"swing",function() {
+            // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
+            $(".jumbotron").fadeTo(600,0,"swing",function() {
               $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
               renderOverlay(data[index]);
+              // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeTo, ensuring our image is ready before we attempt to fade it back in.
               $(".jumbotron").load(function(){
                 $(".jumbotron").fadeTo(900,0.9,"swing");
               });

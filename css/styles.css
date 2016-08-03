@@ -39,14 +39,14 @@ body .img-responsive {
 
 .text-glow-pink {
 
-  text-shadow: 1px 1px 3px #FF1395;
+  text-shadow: 1px 1px 6px #FF1395;
   transition: 1s;
 
 }
 
 .text-glow-pink:hover {
 
-  text-shadow: 1px 1px 9px #FF1395;
+  text-shadow: 1px 1px 12px #FF1395;
   transition: 1s;
 
 }
@@ -60,7 +60,7 @@ body .img-responsive {
 
 .box-glow-blue:hover {
 
-  box-shadow: 1px 1px 9px #1395FF, 0px 0px 9px #1395FF;
+  box-shadow: 1px 1px 12px #1395FF, 0px 0px 12px #1395FF;
   transition: 1s;
 
 }

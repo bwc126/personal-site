@@ -70,6 +70,10 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - ~~Style overlay.~~
 
+- Include some quick "about me" info near my name/picture.
+
+- Visually indicate on mobile in an obvious way the jumbotron content (maybe a label).
+
 - Polish all transitions and glows for smoothness, continuity, and coherence.
 
 - Optimize image/file loading.

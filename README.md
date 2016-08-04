@@ -74,6 +74,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Visually indicate on mobile in an obvious way the jumbotron content (maybe a label).
 
+- On modals, bring "close" button on-click appearance in line. (glow rather than highlight, etc.)
+
 - Polish all transitions and glows for smoothness, continuity, and coherence.
 
 - Optimize image/file loading.

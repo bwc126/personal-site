@@ -70,6 +70,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - ~~Style overlay.~~
 
+- Auto-rotate jumbotron image; change to first project of subject area when subject area button pressed
+
 - Include some quick "about me" info near my name/picture.
 
 - Visually indicate on mobile in an obvious way the jumbotron content (maybe a label).

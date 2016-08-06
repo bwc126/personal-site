@@ -21,7 +21,9 @@
     data = sci;
     renderProjects();
   });
+  // rederOverlay handles rendering of the overlay and the title for the jumbotron
   function renderOverlay(project) {
+    $(".title-banner").html(project.project);
     $(".overlay h3").html(project.project);
     $(".overlay p").html(project.desc);
   }
@@ -83,7 +85,7 @@
     $(".project div").each(function(index) {
       // Any time a project image is entered, the spotlight img will fadeout, set new src/srcset according to the project that was entered, and then fade back in.
       $(this).mouseenter(function() {
-        // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded. 
+        // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded.
         if (data[index].project !== jumbotron) {
             // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
             $(".jumbotron").fadeTo(600,0,"swing",function() {

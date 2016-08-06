@@ -226,7 +226,7 @@ button.programming {
   font-weight: 600;
   width: 100%;
   height: 51%;
-  margin: 27% 0 0 0;
+  margin: 18% 0 0 0;
   padding: 3% 3% 0 3%;
   background-color: rgba(20, 23 ,26, 0.9);
   opacity: 0;
@@ -255,7 +255,16 @@ button.programming {
 
 }
 
+.title-banner {
 
+  height: 9%;
+  font-weight: 400;
+  font-size: 231%;
+  background-color: rgba(20, 23 ,26, 0.66);
+  text-align: left;
+  padding: 0 3%;
+
+}
 
 .jumbotron .overlay h3 {
 

@@ -74,7 +74,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Include some quick "about me" info near my name/picture.
 
-- Visually indicate on mobile in an obvious way the jumbotron content (maybe a label).
+- ~~Visually indicate on mobile in an obvious way the jumbotron content (maybe a label).~~
 
 - On modals, bring "close" button on-click appearance in line. (glow rather than highlight, etc.)
 
@@ -93,3 +93,5 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 - Use parallax.(?)
 
 - Links to running projects or interactive overviews.
+
+- Change URL to something simple. 

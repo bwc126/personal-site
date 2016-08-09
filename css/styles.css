@@ -97,7 +97,7 @@ body .img-responsive {
   margin: 3% 0;
   padding: 0 3%;
   overflow: visible;
-  width: 100%;
+  /*width: 100%;*/
 
 }
 
@@ -146,7 +146,8 @@ h2 {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   max-height: 128px;
-
+  top: 18px;
+  position: relative;
 
 }
 

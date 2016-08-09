@@ -84,6 +84,14 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Optimize image/file loading.
 
+- Change highlight colors.
+
+- Add contact me buttons.
+
+- Add internal border to jumbotron.
+
+- Add more border regions, enhance some glows.
+
 - Make optimal use of images for responsive design.
 
 - Populate content areas. (WIP 6/16/16)
@@ -94,6 +102,6 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Use parallax.(?)
 
-- Links to running projects or interactive overviews.
+- Links to running projects or interactive overviews. (Use a gh-pages branch on each repo with a project to be linked-to)
 
 - Change URL to something simple.

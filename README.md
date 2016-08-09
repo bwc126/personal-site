@@ -72,7 +72,9 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Auto-rotate jumbotron image; change to first project of subject area when subject area button pressed
 
-- Include some quick "about me" info near my name/picture.
+- ~~Include some quick "about me" info near my name/picture.~~
+
+- Add a modal for more about me near the top blurb, perhaps with links to resumes
 
 - ~~Visually indicate on mobile in an obvious way the jumbotron content (maybe a label).~~
 

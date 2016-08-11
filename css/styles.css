@@ -25,11 +25,11 @@
 
 }
 
-body .img-responsive {
+/*body .img-responsive {
 
   border: 1px solid #1395FF;
 
-}
+}*/
 
 .text-glow-blue {
 
@@ -91,13 +91,26 @@ body .img-responsive {
 
 }
 
+.box-glow-pink {
+
+  box-shadow: 1px 1px 3px #FF1395, 0px 0px 6px #FF1395;
+
+}
+
 .dark-bg {
 
   background-color: rgba(20, 23 ,26, 0.66);
   margin: 3% 0;
   padding: 0 3%;
   overflow: visible;
-  /*width: 100%;*/
+
+}
+
+.dark-bg-xtra {
+
+  background-color: rgba(20, 23 ,26, 0.66);
+  margin: 0;
+  padding: 3%;
 
 }
 
@@ -122,7 +135,7 @@ header p {
 
   color: #FF1395;
   text-align: justify;
-  padding: 6% 0 0 0;
+  padding: 0;
 
 }
 
@@ -151,7 +164,9 @@ h2 {
 
 .logo {
 
-  margin: 0 0 0 0;
+  border: 12px solid rgba(20,23,26,0.9);
+
+  margin: 0 0 0 18px;
   padding: 0 0 0 0;
   max-height: 128px;
   top: 18px;
@@ -223,7 +238,7 @@ button.programming {
 .showcase .jumbotron {
 
   padding: 0;
-  border: 0 none;
+  border: 12px solid rgba(20,23,26,0.9);
   background-image: url("../images/M/map-M.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -324,6 +339,8 @@ button.programming {
 }
 
 .project div {
+
+  border: 12px solid rgba(20,23,26,0.9);
 
   background-image: url("../images/thumbs/hydra-delta.png");
   background-position: center;

@@ -240,6 +240,7 @@ button.programming {
   padding: 0;
   border: 12px solid rgba(20,23,26,0.9);
   background-image: url("../images/M/map-M.png");
+  background-color: rgba(20,23,26,0.9);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,7 +249,7 @@ button.programming {
   width: 93%;
   text-align: center;
   margin: 3%;
-  opacity: 0.9;
+  opacity: 1;
 
 }
 

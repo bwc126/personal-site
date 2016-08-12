@@ -93,7 +93,7 @@
               renderOverlay(data[index]);
               // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeTo, ensuring our image is ready before we attempt to fade it back in.
               $(".jumbotron").load(function(){
-                $(".jumbotron").fadeTo(900,0.9,"swing");
+                $(".jumbotron").fadeTo(900,1,"swing");
               });
               jumbotron = data[index].project;
             });

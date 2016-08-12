@@ -88,6 +88,12 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Add contact me buttons.
 
+- Force project widths to have padding or margin on mobile.
+
+- consider relocating projects into menu on mobile.
+
+- Might spacings in header tighter, reorganize layout on larger screens. 
+
 - Add internal border to jumbotron.
 
 - Add more border regions, enhance some glows.

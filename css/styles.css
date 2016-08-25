@@ -320,7 +320,6 @@ button:hover {
 .project div {
 
   border: 12px solid rgba(20,23,26,0.9);
-
   background-image: url("../images/thumbs/hydra-delta.png");
   background-position: center;
   background-repeat: no-repeat;

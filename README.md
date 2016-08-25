@@ -80,7 +80,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - ~~On modals, bring "close" button on-click appearance in line. (glow rather than highlight, etc.)~~
 
-- Polish all transitions and glows for smoothness, continuity, and coherence.
+- ~~Polish all transitions and glows for smoothness, continuity, and coherence.~~
 
 - Optimize image/file loading.
 
@@ -92,9 +92,9 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - consider relocating projects into menu on mobile.
 
-- Might spacings in header tighter, reorganize layout on larger screens. 
+- Might spacings in header tighter, reorganize layout on larger screens.
 
-- Add internal border to jumbotron.
+- ~~Add internal border to jumbotron.~~
 
 - Add more border regions, enhance some glows.
 

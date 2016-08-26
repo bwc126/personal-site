@@ -33,12 +33,14 @@
 
 .text-glow-blue {
 
+  color: #1395FF;
   text-shadow: 1px 1px 6px #1395FF;
 
 }
 
 .text-glow-pink {
 
+  color: #FF1395;
   text-shadow: 1px 1px 6px #FF1395;
   transition: 1s;
 
@@ -46,6 +48,7 @@
 
 .text-glow-pink:hover {
 
+  color: #FF1395;
   text-shadow: 1px 1px 12px #FF1395;
   transition: 1s;
 
@@ -53,6 +56,7 @@
 
 .text-glow-orange {
 
+  color: #FF7D13;
   text-shadow: 1px 1px 6px #FF7D13;
   transition: 1s;
 
@@ -60,6 +64,7 @@
 
 .text-glow-orange:hover {
 
+  color: #FF7D13;
   text-shadow: 1px 1px 12px #FF7D13;
   transition: 1s;
 

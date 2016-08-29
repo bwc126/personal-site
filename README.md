@@ -82,6 +82,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - ~~Polish all transitions and glows for smoothness, continuity, and coherence.~~
 
+- Use a more professional and aesthetic personal picture.
+
 - Optimize image/file loading.
 
 - Change highlight colors.

@@ -17,7 +17,11 @@
 
 }
 
+::selection {
 
+  background: black;
+
+}
 
 .modal-open .row {
 

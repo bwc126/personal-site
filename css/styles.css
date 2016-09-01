@@ -322,6 +322,7 @@ button:hover {
   padding: 1.5% 0 1.5% 0;
   border: 1px solid #1395FF;
   background-color: rgba(20, 23 ,26, 0.66);
+  height: 87px;
 
 }
 
@@ -340,7 +341,7 @@ button:hover {
   background-image: url("../images/thumbs/hydra-delta.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
   opacity: 0.9;
   height: 300px;
   width: 100%;

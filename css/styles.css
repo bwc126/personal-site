@@ -7,7 +7,6 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   color: #1395FF;
-  highlight
 
 }
 
@@ -153,6 +152,7 @@ header p {
   color: #FF1395;
   text-align: justify;
   margin: 12% 0 0 0;
+  font-size: 90%;
 
 }
 
@@ -166,7 +166,7 @@ header p {
 
 h1 {
 
-  font-size: 333%;
+  font-size: 423%;
   font-weight: 300;
   background-color: inherit;
 
@@ -187,7 +187,7 @@ h2 {
   border: 12px solid rgba(20,23,26,0.9);
   padding: 0;
   max-height: 128px;
-  top: 18px;
+  top: 12px;
   position: relative;
   opacity: 0.9;
 

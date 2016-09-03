@@ -74,6 +74,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Add a modal for more about me near the top blurb, perhaps with links to resumes
 
+- Links to running projects or interactive overviews. (Use a gh-pages branch on each repo with a project to be linked-to)
+
 - Add contact me buttons.
 
 - Force project widths to have padding or margin on mobile.
@@ -93,8 +95,6 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 - Change URL to something simple.
 
 - Use parallax.(?)
-
-- Links to running projects or interactive overviews. (Use a gh-pages branch on each repo with a project to be linked-to)
 
 - ~~Change highlight colors.~~
 

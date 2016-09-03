@@ -193,11 +193,12 @@ h2 {
 
 }
 
-.well {
+.menu {
 
   position: relative;
   z-index: 1;
-
+  width: 66%;
+  top: 6%;
 }
 
 .btn-narrow {

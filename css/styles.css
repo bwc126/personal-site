@@ -193,12 +193,18 @@ h2 {
 
 }
 
-/*.logo-box {
+.well {
 
-  padding: 0 0 0 0;
-  width: 18%;
+  position: relative;
+  z-index: 1;
 
-}*/
+}
+
+.btn-narrow {
+
+  width: 12%;
+
+}
 
 /*section: showcase*/
 

@@ -96,6 +96,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Use parallax.(?)
 
+- Use accordion menu for each project, eliminate modals and jumbotron, replace with a carousel at the top or within each for multiple images. Alternately, an accordion menu entry with each subject area, and the carousel within each accordion changes for viewing each project within the subject area, changing the text along with the image. 
+
 - ~~Change highlight colors.~~
 
 - ~~Make spacings in header tighter, reorganize layout on larger screens.~~

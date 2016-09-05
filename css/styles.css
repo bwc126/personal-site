@@ -199,12 +199,15 @@ h2 {
   z-index: 1;
   width: 66%;
   top: 6%;
-  
+
 }
 
 .btn-narrow {
 
-  width: 12%;
+  padding: 0;
+  margin: 24% 0;
+  position: relative;
+  right: -27%;
 
 }
 

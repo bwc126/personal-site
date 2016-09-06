@@ -209,6 +209,13 @@ h2 {
 
 }
 
+.menu li {
+
+  font-size: 120%;
+  margin: 3% 0;
+
+}
+
 .btn-narrow {
 
   padding: 0;

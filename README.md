@@ -74,6 +74,8 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Add a modal for more about me near the top blurb, perhaps with links to resumes
 
+- Avoid resizing page on menu open.
+
 - Links to running projects or interactive overviews. (Use a gh-pages branch on each repo with a project to be linked-to)
 
 - Add contact me buttons.
@@ -96,7 +98,9 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Use parallax.(?)
 
-- Use accordion menu for each project, eliminate modals and jumbotron, replace with a carousel at the top or within each for multiple images. Alternately, an accordion menu entry with each subject area, and the carousel within each accordion changes for viewing each project within the subject area, changing the text along with the image. 
+- Use accordion menu for each project, eliminate modals and jumbotron, replace with a carousel at the top or within each for multiple images. Alternately, an accordion menu entry with each subject area, and the carousel within each accordion changes for viewing each project within the subject area, changing the text along with the image.
+
+- Refactor 'app' into views, models, controllers.
 
 - ~~Change highlight colors.~~
 

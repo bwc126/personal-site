@@ -199,7 +199,12 @@ h2 {
   padding: 0;
 
 }
+.showcase .collapse {
 
+  position: absolute;
+  z-index: 900;
+
+}
 .menu {
 
   position: relative;

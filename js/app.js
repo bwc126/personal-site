@@ -101,20 +101,7 @@
       $(this).mouseenter(function() {
         // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded.
         if (data[index].project !== jumbotron) {
-            // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
-            $(".jumbotron").fadeTo(600,0,"swing",function() {
-              $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
-              renderOverlay(data[index]);
-              // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeTo, ensuring our image is ready before we attempt to fade it back in.
-              $(".jumbotron").load(function(){
-                $(".jumbotron").fadeTo(900,1,"swing");
-              });
-              jumbotron = data[index].project;
-            });
-
-
-            // These two .attr calls set a new src/srcset for the spotlight once the fadeout is complete. Once the images are loaded an ready, the fadeIn call above will execute.
-            // $(".jumbotron img").attr("srcset", data[index].srcset);
+            updateSpotlight(data[index]);
           };
 
       });
@@ -132,19 +119,25 @@
           else {
             $("#science").click();
           };
-          $(".jumbotron").fadeTo(600,0,"swing",function() {
-            $(".jumbotron").attr("style", "background-image: url('" + model[index].srcset.split(" ")[2] + "')");
-            renderOverlay(model[index]);
-            // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeTo, ensuring our image is ready before we attempt to fade it back in.
-            $(".jumbotron").load(function(){
-              $(".jumbotron").fadeTo(900,1,"swing");
-            });
-            jumbotron = model[index].project;
-          });
-        };
+          updateSpotlight(model[index]);
+          }
       });
     });
   };
+
+  // updateSpotlight takes a project model and sets the spotlight jumbotron to change to its image, fading in and out with an animation. The function also updates the tracker variable for which project is currently on the jumbotron.
+  function updateSpotlight(projectModel) {
+    // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
+    $(".jumbotron").fadeTo(600,0,"swing",function() {
+      $(".jumbotron").attr("style", "background-image: url('" + data[index].srcset.split(" ")[2] + "')");
+      renderOverlay(projectModel);
+      // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeTo, ensuring our image is ready before we attempt to fade it back in.
+      $(".jumbotron").load(function(){
+        $(".jumbotron").fadeTo(900,1,"swing");
+      });
+      jumbotron = projectModel.project;
+    });
+  }
   setSpotlightTriggers();
   $("#programming").click();
 })(jQuery);

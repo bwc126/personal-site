@@ -80,7 +80,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Links to running projects or interactive overviews. (Use a gh-pages branch on each repo with a project to be linked-to)
 
-- Add contact me buttons.
+- Add contact me buttons: linkedIn, Gmail, G+, Github, Udacity, etc.
 
 - ~~Force project widths to have padding or margin on mobile.~~
 
@@ -88,15 +88,17 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Populate content areas.
 
-- Optimize image/file loading.
+- Optimize image/file loading, perhaps using a preloader service.
 
 - Make optimal use of images for responsive design.
 
-- Reposition sections to improve presentation impact.
+- ~~Reposition sections to improve presentation impact.~~
 
 - Minimize number of CSS rules and classes.
 
 - Change URL to something simple.
+
+- Use something besides hr tags to visually differentiate menu items.
 
 - Use parallax.(?)
 

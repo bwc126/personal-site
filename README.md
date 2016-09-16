@@ -70,7 +70,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Auto-rotate jumbotron image; change to first project of subject area when subject area button pressed.
 
-- Use a more professional and aesthetic personal picture.
+- ~~Use a more professional and aesthetic personal picture.~~
 
 - Add a modal for more about me near the top blurb, perhaps with links to resumes
 

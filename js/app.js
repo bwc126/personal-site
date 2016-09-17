@@ -70,15 +70,15 @@
   };
   function renderProjectModals() {
     // Render projects in the modal, including: name, image, and descriptive text.
-    $(".modal-dialog p").each(function(index) {
+    $(".project-modal p").each(function(index) {
       $(this).text(data[index].desc);
     });
-    $(".modal-dialog h4").each(function(index) {
+    $(".project-modal h4").each(function(index) {
       $(this).text(data[index].project);
     })
   };
   function renderProjectModalImages() {
-    $(".modal-dialog img").each(function(index) {
+    $(".project-modal img").each(function(index) {
       $(this).attr("src", pathPrefix + data[index].thumb);
       var msg = 'This is the image for ' + data[index].project;
       $(this).attr('alt', msg);

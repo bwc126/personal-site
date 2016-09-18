@@ -21,16 +21,19 @@
     console.log("Programming active");
     data = prog;
     renderProjects();
+
   });
   $("#engineering").click(function() {
     console.log("Engineering Active");
     data = engi;
     renderProjects();
+
   });
   $("#science").click(function() {
     console.log("Science Active");
     data = sci;
     renderProjects();
+
   });
   // rederOverlay handles rendering of the overlay and the title for the jumbotron
   function renderOverlay(project) {
@@ -94,7 +97,7 @@
       $(this).attr('alt', msg);
     });
   };
-  // For loop construction doesn't play nicely with serial event listener setting, so specific code is written for each project so that mouseenter on its image causes the spotlight image to change.
+
   function setSpotlightTriggers() {
     $(".project div").each(function(index) {
       // Any time a project image is entered, the spotlight img will fadeout, set new src/srcset according to the project that was entered, and then fade back in.
@@ -102,10 +105,13 @@
         // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded.
         if (data[index].project !== jumbotron) {
             updateSpotlight(data[index]);
+
           };
 
       });
     });
+  };
+  function setMenuSpotlightTriggers() {
     $(".menu li").each(function(index) {
       $(this).click(function() {
         if (model[index].project !== jumbotron) {
@@ -124,7 +130,6 @@
       });
     });
   };
-
   // updateSpotlight takes a project model and sets the spotlight jumbotron to change to its image, fading in and out with an animation. The function also updates the tracker variable for which project is currently on the jumbotron.
   function updateSpotlight(projectModel) {
     // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
@@ -138,6 +143,23 @@
       jumbotron = projectModel.project;
     });
   }
+  function rotateJumbotron(mod,collection) {
+    var currentItem = collection.indexOf(mod);
+    var numItems = collection.length;
+    var interval = 6000;
+    var rotation = setInterval(function() {
+      if (currentItem === numItems-1) {
+        currentItem = 0;
+      }
+      else {
+        currentItem++;
+      }
+      updateSpotlight(collection[currentItem]);
+    }, interval);
+
+  }
   setSpotlightTriggers();
+  setMenuSpotlightTriggers();
+  rotateJumbotron(data[1],model);
   $("#programming").click();
 })(jQuery);

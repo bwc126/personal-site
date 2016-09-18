@@ -68,13 +68,9 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 # ToDo:
 
-- Auto-rotate jumbotron image; change to first project of subject area when subject area button pressed.
+- ~~Auto-rotate jumbotron image; change to first project of subject area when subject area button pressed.~~
 
-- ~~Use a more professional and aesthetic personal picture.~~
-
-- Add a modal for more about me near the top blurb, perhaps with links to resumes
-
-- Menu opening/closing animation.
+- ~~Add a modal for more about me near the top blurb, perhaps with links to resumes.~~
 
 - Links to running projects or interactive overviews. (Use a gh-pages branch on each repo with a project to be linked-to)
 

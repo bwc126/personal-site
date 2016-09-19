@@ -1,6 +1,9 @@
 "use strict";
 (function($) {
   var pathPrefix = "images/thumbs/";
+  var rotation;
+  var resumeRotation;
+  var interval = 6000;
   // data will initially be whatever the default set of projects is, which should be one of the major categories so that they can be reached again later by clicking one of the buttons.
   var data = prog;
   var areas = [prog,engi,sci];
@@ -104,9 +107,10 @@
       $(this).mouseenter(function() {
         // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded.
         if (data[index].project !== jumbotron) {
-            updateSpotlight(data[index]);
+          window.clearInterval(rotation);
+          updateSpotlight(data[index]);
 
-          };
+        };
 
       });
     });
@@ -125,7 +129,9 @@
           else {
             $("#science").click();
           };
+          window.clearInterval(rotation);
           updateSpotlight(model[index]);
+
           }
       });
     });
@@ -146,8 +152,8 @@
   function rotateJumbotron(mod,collection) {
     var currentItem = collection.indexOf(mod);
     var numItems = collection.length;
-    var interval = 6000;
-    var rotation = setInterval(function() {
+
+    var rotation = window.setInterval(function() {
       if (currentItem === numItems-1) {
         currentItem = 0;
       }

@@ -3,7 +3,9 @@
   var pathPrefix = "images/thumbs/";
   var rotation;
   var resumeRotation;
-  var interval = 6000;
+  var ROT_INTERVAL = 9000;
+  var FADE_OUT = 900;
+  var FADE_IN = 900;
   // data will initially be whatever the default set of projects is, which should be one of the major categories so that they can be reached again later by clicking one of the buttons.
   var data = prog;
   var areas = [prog,engi,sci];
@@ -109,7 +111,7 @@
         if (data[index].project !== jumbotron) {
           window.clearInterval(rotation);
           updateSpotlight(data[index]);
-          window.setTimeout(rotateJumbotron(data[index],model),6000);
+          window.setTimeout(rotateJumbotron(data[index],model),ROT_INTERVAL);
         };
 
       });
@@ -131,7 +133,7 @@
           };
           window.clearInterval(rotation);
           updateSpotlight(model[index]);
-          window.setTimeout(rotateJumbotron(model[index],model),6000);
+          window.setTimeout(rotateJumbotron(model[index],model),ROT_INTERVAL);
           }
       });
     });
@@ -139,12 +141,12 @@
   // updateSpotlight takes a project model and sets the spotlight jumbotron to change to its image, fading in and out with an animation. The function also updates the tracker variable for which project is currently on the jumbotron.
   function updateSpotlight(projectModel) {
     // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
-    $(".jumbotron").fadeTo(600,0,"swing",function() {
+    $(".jumbotron").fadeTo(FADE_OUT,0,"swing",function() {
       $(".jumbotron").attr("style", "background-image: url('" + projectModel.srcset.split(" ")[2] + "')");
       renderOverlay(projectModel);
       // .load() will make sure the jQ object is ready on the DOM before proceeding with the anon CB passed to it, in this case, fadeTo, ensuring our image is ready before we attempt to fade it back in.
       $(".jumbotron").load(function(){
-        $(".jumbotron").fadeTo(900,1,"swing");
+        $(".jumbotron").fadeTo(FADE_IN,1,"swing");
       });
       jumbotron = projectModel.project;
     });
@@ -161,7 +163,7 @@
         currentItem++;
       }
       updateSpotlight(collection[currentItem]);
-    }, interval);
+    }, ROT_INTERVAL);
 
   }
   setSpotlightTriggers();

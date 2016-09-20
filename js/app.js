@@ -109,7 +109,7 @@
         if (data[index].project !== jumbotron) {
           window.clearInterval(rotation);
           updateSpotlight(data[index]);
-
+          window.setTimeout(rotateJumbotron(data[index],model),6000);
         };
 
       });
@@ -131,7 +131,7 @@
           };
           window.clearInterval(rotation);
           updateSpotlight(model[index]);
-
+          window.setTimeout(rotateJumbotron(model[index],model),6000);
           }
       });
     });
@@ -153,7 +153,7 @@
     var currentItem = collection.indexOf(mod);
     var numItems = collection.length;
 
-    var rotation = window.setInterval(function() {
+    rotation = window.setInterval(function() {
       if (currentItem === numItems-1) {
         currentItem = 0;
       }

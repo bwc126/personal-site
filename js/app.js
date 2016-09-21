@@ -109,9 +109,9 @@
       $(this).mouseenter(function() {
         // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded.
         if (data[index].project !== jumbotron) {
-          window.clearInterval(rotation);
-          updateSpotlight(data[index]);
-          window.setTimeout(rotateJumbotron(data[index],model),ROT_INTERVAL);
+
+          focusSpotlight(data[index]);
+
         };
 
       });
@@ -131,12 +131,17 @@
           else {
             $("#science").click();
           };
-          window.clearInterval(rotation);
-          updateSpotlight(model[index]);
-          window.setTimeout(rotateJumbotron(model[index],model),ROT_INTERVAL);
+
+          focusSpotlight(model[index]);
+
           }
       });
     });
+  };
+  function focusSpotlight(projectModel) {
+    window.clearInterval(rotation);
+    updateSpotlight(projectModel);
+    window.setTimeout(rotateJumbotron(projectModel,model),ROT_INTERVAL);
   };
   // updateSpotlight takes a project model and sets the spotlight jumbotron to change to its image, fading in and out with an animation. The function also updates the tracker variable for which project is currently on the jumbotron.
   function updateSpotlight(projectModel) {

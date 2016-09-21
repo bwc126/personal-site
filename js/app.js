@@ -109,9 +109,7 @@
       $(this).mouseenter(function() {
         // We shouldn't change the jumbotron unless we're hovering over a different image than the one that's already loaded.
         if (data[index].project !== jumbotron) {
-
           focusSpotlight(data[index]);
-
         };
 
       });
@@ -131,9 +129,7 @@
           else {
             $("#science").click();
           };
-
           focusSpotlight(model[index]);
-
           }
       });
     });

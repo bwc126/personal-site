@@ -11,15 +11,18 @@
   var areas = [prog,engi,sci];
   var model = [];
   var proj;
-  for (var subj = 0; subj<3; subj++) {
-    for (var pro = 0; pro<3; pro++) {
-      proj = areas[subj][pro];
-      proj.subject = subj;
-      model.push(proj);
-    };
-  };
   var sub;
   var jumbotron = data[1].project;
+  function compileModel() {
+    for (var subj = 0; subj<3; subj++) {
+      for (var pro = 0; pro<3; pro++) {
+        proj = areas[subj][pro];
+        proj.subject = subj;
+        model.push(proj);
+      };
+    };
+  };
+  compileModel();
   renderOverlay(data[1]);
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
   $("#programming").click(function() {
@@ -51,6 +54,7 @@
     renderProjectLinks();
     renderProjectImages();
     setSpotlightTriggers();
+    setMenuSpotlightTriggers();
     renderProjectLinkDomains();
     renderProjectModals();
     renderProjectModalImages();
@@ -151,7 +155,7 @@
       });
       jumbotron = projectModel.project;
     });
-  }
+  };
   function rotateJumbotron(mod,collection) {
     var currentItem = collection.indexOf(mod);
     var numItems = collection.length;
@@ -165,10 +169,7 @@
       }
       updateSpotlight(collection[currentItem]);
     }, ROT_INTERVAL);
-
-  }
-  setSpotlightTriggers();
-  setMenuSpotlightTriggers();
+  };
   rotateJumbotron(data[1],model);
   $("#programming").click();
 })(jQuery);

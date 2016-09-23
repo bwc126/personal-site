@@ -26,19 +26,19 @@
   renderOverlay(data[1]);
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
   $("#programming").click(function() {
-    console.log("Programming active");
+    // console.log("Programming active");
     data = prog;
     renderProjects();
 
   });
   $("#engineering").click(function() {
-    console.log("Engineering Active");
+    // console.log("Engineering Active");
     data = engi;
     renderProjects();
 
   });
   $("#science").click(function() {
-    console.log("Science Active");
+    // console.log("Science Active");
     data = sci;
     renderProjects();
 
@@ -138,6 +138,7 @@
       });
     });
   };
+  // function @focusSpotlight takes a project model, stops the autorotation of the jumbotron, invokes updateSpotlight to change the jumbotron image, and then resumes the rotation after a full rotation interval has passed.
   function focusSpotlight(projectModel) {
     window.clearInterval(rotation);
     updateSpotlight(projectModel);

@@ -1,17 +1,16 @@
 "use strict";
 (function($) {
+  var rotation,
+      proj,
+      sub;
   var pathPrefix = "images/thumbs/";
-  var rotation;
-  var resumeRotation;
   var ROT_INTERVAL = 9000;
   var FADE_OUT = 900;
   var FADE_IN = 900;
-  // data will initially be whatever the default set of projects is, which should be one of the major categories so that they can be reached again later by clicking one of the buttons.
+
   var data = prog;
   var areas = [prog,engi,sci];
   var model = [];
-  var proj;
-  var sub;
   var jumbotron = data[1].project;
   function compileModel() {
     for (var subj = 0; subj<3; subj++) {
@@ -45,9 +44,9 @@
   });
   // rederOverlay handles rendering of the overlay and the title for the jumbotron
   function renderOverlay(project) {
-    $(".title-banner").html(project.project);
-    $(".overlay h3").html(project.project);
-    $(".overlay p").html(project.desc);
+    $(".title-bar").text(project.project);
+
+    $(".overlay p").text(project.desc);
   }
   function renderProjects() {
     renderProjectText();

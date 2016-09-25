@@ -313,6 +313,7 @@ button:hover {
 
   height: 33%;
   transition: 1s ease-out;
+  background-color: rgba(20, 23 ,26, 0.9);
 
 }
 

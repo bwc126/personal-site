@@ -136,16 +136,16 @@
 
 header .row {
 
-  max-height: 25%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+
+  margin: 0;
+  padding: 0;
 
 }
 
 header .col-md-6 {
 
   background-color: inherit;
-  margin: 0 0 0 0;
+  margin: 0;
 
 }
 
@@ -153,14 +153,14 @@ header p {
 
   color: #FF1395;
   text-align: justify;
-  margin: 12% 0 0 0;
+  margin: 12% 9% 0;
   font-size: 90%;
 
 }
 
 .name-plate {
 
-  padding: 0 0 0 0;
+  padding: 0;
   margin: 0.9% 0 0 0;
   text-align: right;
 
@@ -305,13 +305,13 @@ button:hover {
 .jumbotron:hover .overlay {
 
   opacity: 1;
-  transition: 1s opacity ease-in;
+  transition: 1s ease-in;
 
 }
 
 .jumbotron:hover .title-banner {
 
-  height: 33%;
+  height: 39%;
   transition: 1s ease-out;
   background-color: rgba(20, 23 ,26, 0.9);
 
@@ -326,7 +326,7 @@ button:hover {
 
 .title-banner {
 
-  height: 9%;
+  height: 12%;
   font-weight: 400;
   font-size: 231%;
   background-color: rgba(20, 23 ,26, 0.81);

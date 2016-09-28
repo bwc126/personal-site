@@ -1,6 +1,7 @@
 "use strict";
 (function($) {
-  var rotation,
+  var jumbotron,
+      rotation,
       proj,
       sub;
   var pathPrefix = "images/thumbs/";
@@ -11,8 +12,8 @@
   var data = prog;
   var areas = [prog,engi,sci];
   var model = [];
-  var jumbotron = data[1].project;
-  function compileModel() {
+
+  function buildModel() {
     for (var subj = 0; subj<3; subj++) {
       for (var pro = 0; pro<3; pro++) {
         proj = areas[subj][pro];
@@ -21,8 +22,8 @@
       };
     };
   };
-  compileModel();
-  renderOverlay(data[1]);
+  buildModel();
+
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
   $("#programming").click(function() {
     // console.log("Programming active");
@@ -42,6 +43,21 @@
     renderProjects();
 
   });
+  function init(project) {
+    jumbotron = project.project;
+    renderOverlay(project);
+    rotateJumbotron(project,model);
+    sub = project.subject;
+    if (sub === 0) {
+      $("#programming").click();
+    }
+    if (sub === 1) {
+      $("#engineering").click();
+    }
+    else {
+      $("#science").click();
+    };
+  }
   // rederOverlay handles rendering of the overlay and the title for the jumbotron
   function renderOverlay(project) {
     $(".title-bar").text(project.project);
@@ -170,6 +186,6 @@
       updateSpotlight(collection[currentItem]);
     }, ROT_INTERVAL);
   };
-  rotateJumbotron(data[1],model);
-  $("#programming").click();
+
+  init(model[1]);
 })(jQuery);

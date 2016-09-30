@@ -13,6 +13,7 @@
   var areas = [prog,engi,sci];
   var model = [];
 
+  // @function buildModel() collects all the models for the projects and stores them in a single model, along with info about which subject area they belong to.
   function buildModel() {
     for (var subj = 0; subj<3; subj++) {
       for (var pro = 0; pro<3; pro++) {
@@ -43,6 +44,7 @@
     renderProjects();
 
   });
+  // @function init(project) takes an initial project to be the focus of the page upon loading and performs various once-a-session tasks, like setting the jumbotron variable so we know which project is active in it, rendering the overlay, initiating jumbotron rotation, and activating the subject area associated with the initial project.
   function init(project) {
     jumbotron = project.project;
     renderOverlay(project);
@@ -64,6 +66,7 @@
 
     $(".overlay p").text(project.desc);
   }
+  // @function renderProjects() handles the various tasks of rendering all the projects that need to be shown on the page for the presently-active subject area. This should be called anytime a subject area is activated. 
   function renderProjects() {
     renderProjectText();
     renderProjectLinks();

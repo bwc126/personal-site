@@ -26,47 +26,52 @@
   buildModel();
 
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
-  $("#programming").click(function() {
-    // console.log("Programming active");
-    data = prog;
-    renderProjects();
+  function initButtons() {
+    $("#programming").click(function() {
+      console.log("Programming active");
+      data = prog;
+      renderProjects();
 
-  });
-  $("#engineering").click(function() {
-    // console.log("Engineering Active");
-    data = engi;
-    renderProjects();
+    });
+    $("#engineering").click(function() {
+      console.log("Engineering Active");
+      data = engi;
+      renderProjects();
 
-  });
-  $("#science").click(function() {
-    // console.log("Science Active");
-    data = sci;
-    renderProjects();
+    });
+    $("#science").click(function() {
+      console.log("Science Active");
+      data = sci;
+      renderProjects();
 
-  });
+    });
+
+  };
   // @function init(project) takes an initial project to be the focus of the page upon loading and performs various once-a-session tasks, like setting the jumbotron variable so we know which project is active in it, rendering the overlay, initiating jumbotron rotation, and activating the subject area associated with the initial project.
   function init(project) {
+    initButtons();
     jumbotron = project.project;
     renderOverlay(project);
     rotateJumbotron(project,model);
     sub = project.subject;
+    console.log(sub);
     if (sub === 0) {
       $("#programming").click();
     }
     if (sub === 1) {
       $("#engineering").click();
     }
-    else {
+    if (sub === 2) {
       $("#science").click();
     };
-  }
+  };
   // rederOverlay handles rendering of the overlay and the title for the jumbotron
   function renderOverlay(project) {
     $(".title-bar").text(project.project);
 
     $(".overlay p").text(project.desc);
-  }
-  // @function renderProjects() handles the various tasks of rendering all the projects that need to be shown on the page for the presently-active subject area. This should be called anytime a subject area is activated. 
+  };
+  // @function renderProjects() handles the various tasks of rendering all the projects that need to be shown on the page for the presently-active subject area. This should be called anytime a subject area is activated.
   function renderProjects() {
     renderProjectText();
     renderProjectLinks();

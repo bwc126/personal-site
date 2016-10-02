@@ -11,19 +11,19 @@
 
   var data = prog;
   var areas = [prog,engi,sci];
-  var model = [];
+  var collection = [];
 
-  // @function buildModel() collects all the models for the projects and stores them in a single model, along with info about which subject area they belong to.
-  function buildModel() {
+  // @function buildcollection() collects all the models for the projects and stores them in a single collection, along with info about which subject area they belong to.
+  function buildCollection() {
     for (var subj = 0; subj<3; subj++) {
       for (var pro = 0; pro<3; pro++) {
         proj = areas[subj][pro];
         proj.subject = subj;
-        model.push(proj);
+        collection.push(proj);
       };
     };
   };
-  buildModel();
+  buildCollection();
 
   // The click triggers for the subject buttons will set the project images to the project images for the appropriate subject area, and then call setSpotlightTriggers to make sure they will change the spotlight upon mouseenter.
   function initButtons() {
@@ -52,7 +52,7 @@
     initButtons();
     jumbotron = project.project;
     renderOverlay(project);
-    rotateJumbotron(project,model);
+    rotateJumbotron(project,collection);
     sub = project.subject;
     console.log(sub);
     if (sub === 0) {
@@ -94,7 +94,7 @@
       $(this).attr("href", data[index].link);
     });
     $(".menu li").each(function(index) {
-      $(this).text(model[index].project);
+      $(this).text(collection[index].project);
     });
   };
   function renderProjectLinkDomains() {
@@ -145,8 +145,8 @@
   function setMenuSpotlightTriggers() {
     $(".menu li").each(function(index) {
       $(this).click(function() {
-        if (model[index].project !== jumbotron) {
-          sub = model[index].subject;
+        if (collection[index].project !== jumbotron) {
+          sub = collection[index].subject;
           if (sub === 0) {
             $("#programming").click();
           }
@@ -156,7 +156,7 @@
           else {
             $("#science").click();
           };
-          focusSpotlight(model[index]);
+          focusSpotlight(collection[index]);
           }
       });
     });
@@ -165,7 +165,7 @@
   function focusSpotlight(projectModel) {
     window.clearInterval(rotation);
     updateSpotlight(projectModel);
-    window.setTimeout(rotateJumbotron(projectModel,model),ROT_INTERVAL);
+    window.setTimeout(rotateJumbotron(projectModel,collection),ROT_INTERVAL);
   };
   // updateSpotlight takes a project model and sets the spotlight jumbotron to change to its image, fading in and out with an animation. The function also updates the tracker variable for which project is currently on the jumbotron.
   function updateSpotlight(projectModel) {
@@ -195,5 +195,5 @@
     }, ROT_INTERVAL);
   };
 
-  init(model[1]);
+  init(collection[1]);
 })(jQuery);

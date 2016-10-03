@@ -47,6 +47,7 @@
     });
 
   };
+
   // @function init(project) takes an initial project to be the focus of the page upon loading and performs various once-a-session tasks, like setting the jumbotron variable so we know which project is active in it, rendering the overlay, initiating jumbotron rotation, and activating the subject area associated with the initial project.
   function init(project) {
     initButtons();
@@ -65,12 +66,14 @@
       $("#science").click();
     };
   };
-  // rederOverlay handles rendering of the overlay and the title for the jumbotron
+
+  // renderOverlay handles rendering of the overlay and the title for the jumbotron
   function renderOverlay(project) {
     $(".title-bar").text(project.project);
 
     $(".overlay p").text(project.desc);
   };
+
   // @function renderProjects() handles the various tasks of rendering all the projects that need to be shown on the page for the presently-active subject area. This should be called anytime a subject area is activated.
   function renderProjects() {
     renderProjectText();
@@ -82,6 +85,7 @@
     renderProjectModals();
     renderProjectModalImages();
   };
+
   // renderProjectText prepares the textual content of each project; this function is called when a button is pressed and a new subject area of content needs to be loaded.
   function renderProjectText() {
     $(".project h4").each(function(index) {
@@ -167,7 +171,7 @@
     updateSpotlight(projectModel);
     window.setTimeout(rotateJumbotron(projectModel,collection),ROT_INTERVAL);
   };
-  // updateSpotlight takes a project model and sets the spotlight jumbotron to change to its image, fading in and out with an animation. The function also updates the tracker variable for which project is currently on the jumbotron.
+  // @function updateSpotlight takes a project model and sets the spotlight jumbotron to change to its image, fading in and out with an animation. The function also updates the tracker variable for which project is currently on the jumbotron.
   function updateSpotlight(projectModel) {
     // Callbacks to jQ animation functions will execute after the ani completes, so this will cause the jumbotron image to fadeOut, and then execute the code passed into the anon calllback.
     $(".jumbotron").fadeTo(FADE_OUT,0,"swing",function() {
@@ -180,6 +184,7 @@
       jumbotron = projectModel.project;
     });
   };
+  // @function rotateJumbotron sets up a rotation inteval for the jumbotron image, taking an initial image and rotating it according to a constant across each of the project images found in collection. 
   function rotateJumbotron(mod,collection) {
     var currentItem = collection.indexOf(mod);
     var numItems = collection.length;

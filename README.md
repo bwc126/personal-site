@@ -72,7 +72,7 @@ Programming, Engineering and Science. Key projects/points of interest from each 
 
 - Add contact me buttons: linkedIn, Gmail, G+, Github, Udacity, etc.
 
-- Add resumes to the 'about me' modal.
+- Add resumes to the 'about me' modal, replace google plus with a resume.
 
 - Populate content areas.
 

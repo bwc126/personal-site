@@ -168,7 +168,7 @@ header p {
 
 h1 {
 
-  font-size: 423%;
+  font-size: 402%;
   font-weight: 300;
   background-color: inherit;
 
@@ -177,7 +177,7 @@ h1 {
 h2 {
 
   font-weight: 300;
-  font-size: 111%;
+  font-size: 99%;
   margin: 0 0 0 0;
   background-color: inherit;
 
@@ -238,6 +238,20 @@ h2 {
 
 }
 
+.social-buttons {
+
+  margin: 3% 0 0 7.2%;
+
+}
+
+.social-buttons a {
+
+  margin: 0 1.2%;
+
+}
+
+/*section: showcase*/
+
 .btn-narrow {
 
   padding: 0;
@@ -246,8 +260,6 @@ h2 {
   right: -27%;
 
 }
-
-/*section: showcase*/
 
 .showcase .divider hr {
 

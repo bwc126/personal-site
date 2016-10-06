@@ -10,12 +10,14 @@
       images[i].src = imgArray[i];
     }
   };
-  numImg = collection.length;
   function getImages(coll) {
+  numImg = coll.length;
     for (var i = 0: i < numImg; i++) {
-      imgList = coll[i].srcset.split(" ")[2]
+      imgList.push(coll[i].srcset.split(" ")[2]);
     }
+    return imgList
   };
+  preload(getImages(collection));
   console.log("loader.js loaded");
 
 })(jQuery)

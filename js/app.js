@@ -1,4 +1,5 @@
 "use strict";
+var collection;
 (function($) {
   var jumbotron,
       rotation,
@@ -11,7 +12,7 @@
 
   var data = prog;
   var areas = [prog,engi,sci];
-  var collection = [];
+  collection = [];
 
   // @function buildcollection() collects all the models for the projects and stores them in a single collection, along with info about which subject area they belong to.
   function buildCollection() {
@@ -184,7 +185,7 @@
       jumbotron = projectModel.project;
     });
   };
-  // @function rotateJumbotron sets up a rotation inteval for the jumbotron image, taking an initial image and rotating it according to a constant across each of the project images found in collection. 
+  // @function rotateJumbotron sets up a rotation inteval for the jumbotron image, taking an initial image and rotating it according to a constant across each of the project images found in collection.
   function rotateJumbotron(mod,collection) {
     var currentItem = collection.indexOf(mod);
     var numItems = collection.length;
